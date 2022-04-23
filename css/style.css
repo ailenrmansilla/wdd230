@@ -1,24 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap');
+
+
 h1,h2{
     font-family: Helvetica;
     color: black;
-    text-shadow:1px 1px 1px rgb(32, 32, 32);
+    text-shadow:1px 1px 5px rgb(32, 32, 32);
 }
 
 header{
     box-shadow: 1px 1px 4px 1px rgb(80, 79, 79);
     border-radius: 10px;
-    background-color: rgb(34, 34, 165);
+    background-color: rgb(67, 67, 187);
 }
-.header{
+
+ul{
+    font-family: 'Roboto Mono', sans-serif;
+}
+p{
+    font-family: Helvetica;
+}
+#aclaration{
+    font-style: italic;
+}
+
+.introduction{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2em;
 }
 img{
-    max-width: 250px;
-    grid-column: 1/2;
+    max-width: 300px;
+    grid-column: 1;
+    justify-content:center;
+    text-shadow:1px 1px 5px rgb(32, 32, 32);
+    margin-left: 30px;
 }
 
 #name{
     color: white;
-    grid-column: 2/3;
+    grid-column: 2;
+    justify-content: center;
+    margin-top: 110px;
+}
+footer{
+    box-shadow: 1px 1px 4px 3px rgb(80, 79, 79);
+    border-radius: 10px;
+    background-color: rgb(63, 63, 158);
+    color:white;
+}
+#last-updated{
+    color: yellow;
 }
