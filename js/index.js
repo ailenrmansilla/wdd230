@@ -7,4 +7,4 @@ const minute = LastModif.getMinutes();
 const second = LastModif.getSeconds();
 const last_modified = `${month}/${day}/${year} ${hour}:${minute}:${second}`;
 console.log(last_modified);
-document.getElementById("last-updated").textContent = last_modified;
+document.getElementById('last-updated').textContent = last_modified;
