@@ -3,6 +3,7 @@ h1,h2,h3{
     font-family: 'Montserrat', sans-serif;
     color:whitesmoke;
     padding: 1em;
+    text-align: center;
 }
 p{
     padding: 0.5em;
@@ -15,37 +16,28 @@ img{
 a{
     color:rgb(0, 0, 248);
 }
-header{
+.introduction{
     background-color: rgb(20, 20, 66);
-    display: grid;
-    grid-gap:1em;
-    grid-template-columns: 1fr;
-    justify-self: center;
 }
-#name{
-    grid-column: 1/2;
-}
-#topic{
-    grid-column: 1/2;
-}
+
 main{
     display: grid;
     grid-template-columns: 1fr;
 }
 .examples{
-    border-radius: 20px;
+    border-radius: 25px;
     color:rgb(0, 0, 0);
     background-color:  rgb(173, 173, 187);
-    align-items: center;
+    text-align: center;
     padding:0.5em;
 }
 .topic-title{
     background-color: rgb(35, 35, 63);
-    color:whitesmoke;
-    
+    text-align: center;
 }
 .companies{
     color: black;
+    text-align: center;
 }
 #topic1{
     grid-column: 1/2;
@@ -93,6 +85,6 @@ main{
 footer{
     background-color: rgb(20, 20, 66);
     color: whitesmoke;
-    align-items: center;
+    text-align: center;
 }
 }
