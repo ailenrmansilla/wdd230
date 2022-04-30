@@ -12,7 +12,7 @@ header{
     max-width:32.5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:1em;
+    grid-gap:0.5em;
     padding:0.5em;
     /*use this to center name and image in the header*/
 }
