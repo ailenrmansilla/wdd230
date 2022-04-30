@@ -27,7 +27,7 @@ img{
     max-width: 180px;
     grid-column: 1;
     margin: auto;
-    text-shadow:1px 1px 5px rgb(32, 32, 32);
+    box-shadow:1px 1px 4px 1px rgb(32, 32, 32);
 }
 ul{
     font-family: 'Roboto Mono', monospace;
