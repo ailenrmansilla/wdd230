@@ -1,3 +1,4 @@
+
 h2{
     font-family: Helvetica;
     color: black;
@@ -8,25 +9,24 @@ header{
     box-shadow: 1px 1px 4px 1px rgb(80, 79, 79);
     border-radius: 10px;
     background-color: rgb(67, 67, 187);
-    max-width:30em;
+    max-width:32.5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2em;
+    grid-gap:1em;
+    padding:0.5em;
     /*use this to center name and image in the header*/
 }
 h1{ font-family: Helvetica;
     color: white;
     grid-column: 2;
     text-align: center;
+    padding: 1em;
 }
-main{
-    max-width:30em;
-    background-color: whitesmoke;
-}
+
 img{
-    max-width: 250px;
+    max-width: 180px;
     grid-column: 1;
-    justify-content:center;
+    margin: auto;
     text-shadow:1px 1px 5px rgb(32, 32, 32);
 }
 ul{
@@ -37,10 +37,10 @@ p{
 }
 
 footer{
+    max-width:32.5em;
     box-shadow: 1px 1px 4px 3px rgb(80, 79, 79);
     border-radius: 10px;
     background-color: rgb(63, 63, 158);
-    max-width:30em;
     color:white;
     text-align: center;
 }

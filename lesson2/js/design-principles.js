@@ -7,5 +7,5 @@ const minute = LastModif.getMinutes();
 const second = LastModif.getSeconds();
 const last_modified = `${month}/${day}/${year} ${hour}:${minute}:${second}`;
 
-document.querySelector('#last-updated-information').textContent = last_modified;
+document.querySelector('#updated').textContent = last_modified;
 document.querySelector('#current-year').textContent = year;
