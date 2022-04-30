@@ -7,7 +7,7 @@ h1,h2,h3{
 }
 p{
     padding: 0.5em;
-    color:black;
+    color:whitesmoke;
     font-family: 'Montserrat', sans-serif;  
 }
 img{
@@ -16,82 +16,62 @@ img{
 a{
     color:rgb(0, 0, 248);
 }
-.introduction{
+header{
     background-color: rgb(20, 20, 66);
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
 }
 .examples{
     border-radius: 25px;
     color:rgb(0, 0, 0);
     background-color:  rgb(173, 173, 187);
     text-align: center;
-    padding:0.5em;
     display:grid;
+    padding:0.3em;
+    grid-gap:1em;
     grid-template-columns: 1fr;
+}
+.topic-title{
+    background-color: rgb(35, 35, 63);
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.companies{
+    color: black;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.links{
+    text-align: center;
+    grid-column: 1/2;
+    grid-row:3;
+}
+.pictures{
+    grid-column: 1/2;
+    grid-row:4;
+    margin:auto;
+}
+.description{
+    grid-column: 1/2;
+    grid-row: 5;
+    color:rgb(9, 9, 9);
 }
 #example1{
     grid-column: 1/2;
 }
+
 #example2{
     grid-column: 2/3;
 }
 #example3{
     grid-column: 3/4;
 }
-.topic-title{
-    background-color: rgb(35, 35, 63);
-    text-align: center;
-}
-.companies{
-    color: black;
-    text-align: center;
-}
-#topic1{
-    grid-column: 1/2;
-    grid-row:1;
-
-}
-#company1{
-    grid-column: 1/2;
-    grid-row:2;
-
-}
-#company1-img{
-    grid-column: 1/2;
-    grid-row:3;
-}
-#topic2{
-    grid-column: 1/2;
-    grid-row:4;   
-}
-#company2{
-    grid-column: 1/2;
-    grid-row:5;
-
-}
-#company2-img{
-    grid-column: 1/2;
-    grid-row:6;
-}
-#topic3{
-    grid-column: 1/2;
-    grid-row:7;
-
-}
-#company3{
-    grid-column: 1/2;
-    grid-row:8;
-
-}
-#company3-img{
-    grid-column: 1/2;
-    grid-row:9;
-}
-
 
 footer{
     background-color: rgb(20, 20, 66);
