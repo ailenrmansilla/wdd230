@@ -1,0 +1,17 @@
+@media (min-width: 20em){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5em;
+    }
+    #example1{
+        grid-column: 1/2;
+    }
+    
+    #example2{
+        grid-column: 1/2;
+    }
+    #example3{
+        grid-column: 1/2;
+    }
+}
