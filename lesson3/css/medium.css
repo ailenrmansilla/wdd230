@@ -1,0 +1,15 @@
+h1,h2,h3{
+    color:#6D6875;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #FFCDB2;
+}
+p{
+    color:#6D6875;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #FFCDB2;
+}
+a{
+    font-family: 'Roboto Mono', sans-serif;
+    color:#6D6875;
+    background-color: #E5989B;
+}
