@@ -1,21 +1,31 @@
 @media (min-width: 32.5em){
+header{
+    max-width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 h1{
  text-align: left;
+ grid-column:1;
 }
 h2{
     text-align: center;
 }
 img{
     max-width: 250px;
+    grid-column:1;
 }
-header{
-    max-width:100%;
-}
+
 footer{
     max-width:100%;
+    padding: 0.5em;
 }
 ul{
     list-style-type: square;
     font-size: 24px;
+}
+body{
+    max-width: 800px;
+    margin: 0 auto;
 }
 }

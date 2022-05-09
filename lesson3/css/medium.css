@@ -6,10 +6,16 @@ h1,h2,h3{
 p{
     color:#6D6875;
     font-family: 'Roboto Mono', sans-serif;
-    background-color: #FFCDB2;
+
 }
 a{
     font-family: 'Roboto Mono', sans-serif;
     color:#6D6875;
     background-color: #E5989B;
+}
+body{
+    background-color: #FFCDB2;
+}
+footer{
+    background-color:#B5838D;
 }

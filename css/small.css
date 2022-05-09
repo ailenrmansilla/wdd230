@@ -5,27 +5,34 @@ h2{
     text-shadow:1px 1px 5px rgb(32, 32, 32);
 }
 
+body{
+    margin:0 auto;
+}
+
 header{
     box-shadow: 1px 1px 4px 1px rgb(80, 79, 79);
     border-radius: 10px;
     background-color: rgb(67, 67, 187);
     max-width:32.5em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap:0.5em;
     padding:0.5em;
-    /*use this to center name and image in the header*/
+
 }
+
 h1{ font-family: Helvetica;
     color: white;
-    grid-column: 2;
+    grid-column: 1;
+    grid-row:1;
     text-align: center;
     padding: 1em;
 }
 
 img{
-    max-width: 180px;
+    max-width: 250px;
     grid-column: 1;
+    grid-row:2;
     margin: auto;
     box-shadow:1px 1px 4px 1px rgb(32, 32, 32);
 }
@@ -43,6 +50,7 @@ footer{
     background-color: rgb(63, 63, 158);
     color:white;
     text-align: center;
+    padding:0.5em;
 }
 #last-updated-information{
     color: yellow;

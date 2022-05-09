@@ -8,4 +8,4 @@ const second = LastModif.getSeconds();
 const last_modified = `${month}/${day}/${year} ${hour}:${minute}:${second}`;
 
 document.querySelector('#updated').textContent = last_modified;
-document.querySelector('#current-year').textContent = year;
+document.querySelector('#current-year').textContent = new Date().getFullYear();
