@@ -24,7 +24,7 @@ header{
 h1{ font-family: Helvetica;
     color: white;
     grid-column: 1;
-    grid-row:1;
+    grid-row:2;
     text-align: center;
     padding: 1em;
 }
@@ -32,7 +32,7 @@ h1{ font-family: Helvetica;
 img{
     max-width: 250px;
     grid-column: 1;
-    grid-row:2;
+    grid-row:1;
     margin: auto;
     box-shadow:1px 1px 4px 1px rgb(32, 32, 32);
 }
