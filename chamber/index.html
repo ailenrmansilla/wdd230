@@ -5,16 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ailen Mansilla">
-    <meta name="description" content=" A chamber of commerce, local organization of businessess">
+    <meta name="description" content="Rosario chamber of commerce, local organization of businessess">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="rosario chamber of commerce">
+        <h1 id="title">Rosario Chamber of Commerce</h1>
+        <a href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
+        <a href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
+    </header>
+    <nav>
+        <button id="hamburger-button">&#9776</button>
+        <ul id="primary-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+    <main>
+        <div id="call-to-action">
+            <p>Hero with site name and call to action </p>
+        </div>
+        <div id="event">
+            <p>Event</p>
+        </div>
+        <div id="weather">
+            <p>Weather</p>
+        </div>
+        <div id="new-release">
+            <p>New release</p>
+        </div>
+        <div id="spotlights">
+            <div id="spotlight-1">Spotlight 1</div>
+            <div id="spotlight-2">Spotlight 2</div>
+        </div>
+    </main>
     
+    <footer>
+        <h2>Rosario Chamber of Commerce</h2>
+        <h3>Rosario, Argentina</h3>
+        <p>Telephone: 
+        <br>Email:
+        <br>Location Map:
+        </p>
+        <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce <br><strong>Ailen Rocio Mansilla</strong>
+        <br> WDD 230 Project
+        <br>Last Modification: <span id="updated"></span>
+        </p> 
+    </footer>
 </body>
 <script src="js/chamber.js"></script>
 </html>

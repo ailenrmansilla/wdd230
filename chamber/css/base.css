@@ -1,0 +1,70 @@
+@media (max-width:576px){
+    h1,h2,h3{
+        color: #6D6875;
+    }
+    p{
+        color:#6D6875;
+    }
+    header{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 100%;
+        padding:0.5em;
+    }
+    body{
+        background-color: #FFCDB2;
+    }
+    #title{
+        grid-column: 2/3;
+    }
+    img{
+        grid-column: 1/2;
+        max-width: 30px;
+    }
+    .social-media{
+        grid-column:3/5;
+        max-width: 10px;
+        max-height:10px; 
+        justify-self: end;
+    }
+    nav{
+        background-color: #FFB4A2;
+    }
+    nav ul#primary-nav{
+        display:none;
+        list-style:none;
+        padding:0;
+        margin:0;
+
+    }
+    nav ul.open{
+        display:block;
+    }
+    nav button{
+        margin: 0.2rem 2vw;
+        background-color: transparent;
+        border:none;
+        font-size: 2rem;
+        color: #555;
+    }
+    nav ul li a{
+        display:block;  /*all the line is clickable now*/
+        padding:0.8rem 2vw;
+        text-decoration: none;
+        color: #333;
+        border-top: 1px solid rgba(0,0,0,0.5); /*a fourth value to see how transparent it will be*/
+    }
+    nav ul li a:hover {
+        background-color: #E5989B;
+    }
+    nav ul li.active a{ /*when we are in the li active class*/
+        background-color: #B5838D;
+        color: rgb(240, 214, 214);
+    }
+    footer{
+        background-color: #B5838D;
+        text-align: center;
+        padding: .2em;
+    }
+
+}
