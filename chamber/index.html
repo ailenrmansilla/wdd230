@@ -19,16 +19,19 @@
         <h1 id="title">Rosario Chamber of Commerce</h1>
         <a href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
         <a href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
+        <nav>
+            <button id="hamburger-button">&#9776</button>
+            <ul class="navigation" id="primary-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </nav>
+        <span id="current-date"></span>
     </header>
-    <nav>
-        <button id="hamburger-button">&#9776</button>
-        <ul id="primary-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
-        </ul>
-    </nav>
+
     <main>
         <div id="call-to-action">
             <p>Hero with site name and call to action </p>
@@ -60,6 +63,6 @@
         <br>Last Modification: <span id="updated"></span>
         </p> 
     </footer>
+    <script src="js/chamber.js"></script>
 </body>
-<script src="js/chamber.js"></script>
 </html>

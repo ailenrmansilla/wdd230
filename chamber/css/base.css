@@ -6,26 +6,21 @@
         color:#6D6875;
     }
     header{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display:flex;
         max-width: 100%;
         padding:0.5em;
+        align-items: center;
+        justify-content: center;
+    }
+    header img{
+        width: 40px;
+        height: auto;
     }
     body{
         background-color: #FFCDB2;
     }
     #title{
         grid-column: 2/3;
-    }
-    img{
-        grid-column: 1/2;
-        max-width: 30px;
-    }
-    .social-media{
-        grid-column:3/5;
-        max-width: 10px;
-        max-height:10px; 
-        justify-self: end;
     }
     nav{
         background-color: #FFB4A2;
