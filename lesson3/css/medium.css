@@ -1,21 +1,17 @@
 @media (min-width: 576px){
 h1,h2,h3{
     color:#6D6875;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 p{
     color:#6D6875;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
 }
 
-header{
+header, footer{
 	background-color: #FFB4A2;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 0.5em;
+    align-content: center;
     max-width: 100%;
 	margin: 0 auto;
 }
@@ -26,17 +22,21 @@ main{
 nav{
     max-width: 100%;
     margin: 0 auto;
+    padding: 0.3em;
     text-align: center;
     box-shadow: 0 0 30px #FFB4A2;
     display: flex;
-
+    flex-flow: row;
+	align-items: center;
+	justify-content: center;
     
 }
-nav div {
+nav ul li {
 	flex: 1 1 auto;
 }
 
 nav a {
+    font-family: 'Poppins', sans-serif;
 	display: block;
 	color: #6D6875;
 	text-align: center;
@@ -61,10 +61,17 @@ footer{
     max-width:100%;
     text-align: center;
 }
+#info-footer{
+    color: #cfc9b7;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+    color:#B5838D;
+}
 
 ul li{
     color:#6D6875;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
 }
 
