@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ailen Mansilla">
     <meta name="description" content="Rosario chamber of commerce, local organization of businessess">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -17,18 +18,20 @@
     <header>
         <img id="logo" src="images/logo.png" alt="rosario chamber of commerce">
         <h1 id="title">Rosario Chamber of Commerce</h1>
-        <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
-        <a class="social-media" href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
+        
         <nav>
-            <button id="hamburger-button">&#9776</button>
             <ul class="navigation" id="primary-nav">
-                <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+                <li id="hamburger-button">&#9776 Menu</li>
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Location</a></li>
                 <li><a href="#">Contact</a></li>    
             </ul>
         </nav>
+        <div id="social-media-links">
+        <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
+        <a class="social-media" href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
         <span id="current-date"></span>
     </header>
 
@@ -46,8 +49,8 @@
             <p>New release</p>
         </div>
         <div id="spotlights">
-            <div id="spotlight-1">Spotlight 1</div>
-            <div id="spotlight-2">Spotlight 2</div>
+            <div id="spotlight-1"><p>Spotlight 1</p></div>
+            <div id="spotlight-2"><p>Spotlight 2</p></div>
         </div>
     </main>
     
@@ -58,10 +61,11 @@
         <br>Email:
         <br>Location Map:
         </p>
-        <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce <br><strong>Ailen Rocio Mansilla</strong>
-        <br> WDD 230 Project
-        <br>Last Modification: <span id="updated"></span>
+        <div id="information">
+        <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce | <strong>Ailen Rocio Mansilla</strong>
+        | WDD 230 Project |Last Modification: <span id="updated"></span>
         </p> 
+        </div>
     </footer>
     <script src="js/chamber.js"></script>
 </body>
