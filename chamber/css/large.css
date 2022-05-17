@@ -16,21 +16,31 @@
         background-color: #FFCDB2;
     }
     header{
-        display:flex;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 100%;
         padding:0.5em;
         align-items: center;
         justify-content: center;
+        background-color: #E5989B;
     }
     header img{
         width: 80px;
         height: auto;
     }
-   
+    #logo{
+        grid-column: 1/2;
+    }
     #title{
         grid-column: 2/3;
     }
+    .social-media{
+        grid-column: 3/4;
+        display: flex;
+    }
     nav{
+        grid-column: 1/4;
+        grid-row:2;
         background-color: #FFB4A2;
         padding: 0.5em;
         display: flex;
@@ -38,14 +48,11 @@
 	    align-items: center;
 	    justify-content: center;
     }
-    nav button{
-        display:none;
-    }
+
     nav ul{
-        margin-left: 2vw;
+        margin-left: 1em;
         list-style:none;
         font-size: 18px;
-   
     }
     nav ul li a{
         border:none;
@@ -64,10 +71,9 @@
         color:rgb(240, 214, 214);
         padding:0.5em;
     }
-    main{
-        padding:1em;
+    #current-date{
+        font-size:18px;
+        text-align: center;
     }
-    img{
-        max-width: 50px;
-    }
+
 }

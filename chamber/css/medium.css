@@ -1,61 +1,62 @@
 @media (min-width:576px){
+    body{
+        padding:0;
+        margin:0;
+        background-color: #FFCDB2;
+        font-family:'Poppins', sans-serif;;
+    }
     h1,h2,h3{
         color: #6D6875;
     }
     p{
         color:#6D6875;
-    }
-    nav ul{
-        list-style:none;
-    }
-    header{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 100%;
-        padding:0.5em;
+        font-size: 23px;
     }
     body{
         background-color: #FFCDB2;
     }
+    header{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+        padding:0.5em;
+        align-items: center;
+        justify-content: center;
+        background-color: #E5989B;
+    }
+    header img{
+        width: 80px;
+        height: auto;
+    }
+    #logo{
+        grid-column: 1/2;
+    }
     #title{
         grid-column: 2/3;
     }
-    img{
-        grid-column: 1/2;
-        max-width: 50px;
-    }
     .social-media{
-        grid-column: 3/5;
-        max-width: 30px;
-        max-height:30px; 
-        justify-self: end;
+        grid-column: 3/4;
+        display: flex;
     }
     nav{
+        grid-column: 1/4;
+        grid-row:2;
         background-color: #FFB4A2;
+        padding: 0.5em;
+        display: flex;
+        flex-flow: row;
+	    align-items: center;
+	    justify-content: center;
     }
-    nav ul#primary-nav{
-        display:none;
-        list-style:none;
-        padding:0;
-        margin:0;
 
-    }
-    nav ul.open{
-        display:block;
-    }
-    nav button{
-        margin: 0.2rem 2vw;
-        background-color: transparent;
-        border:none;
-        font-size: 2rem;
-        color: #555;
+    nav ul{
+        margin-left: 1em;
+        list-style:none;
+        font-size: 18px;
     }
     nav ul li a{
-        display:block;  /*all the line is clickable now*/
-        padding:0.8rem 2vw;
-        text-decoration: none;
-        color: #333;
-        border-top: 1px solid rgba(0,0,0,0.5); /*a fourth value to see how transparent it will be*/
+        border:none;
+        padding: 0.8em;
     }
     nav ul li a:hover {
         background-color: #E5989B;
@@ -65,8 +66,14 @@
         color: rgb(240, 214, 214);
     }
     footer{
-        background-color: #B5838D;
         text-align: center;
+        background-color: #B5838D;
+        color:rgb(240, 214, 214);
         padding:0.5em;
     }
+    #current-date{
+        font-size:18px;
+        text-align: center;
+    }
+
 }
