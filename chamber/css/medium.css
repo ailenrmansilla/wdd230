@@ -1,30 +1,11 @@
 @media only screen and (min-width:576px){
-    h1,h2,h3{
-        color: #6D6875;
-    }
-    p{
-        color:#6D6875;
-    }
-    header{
-        display:flex;
-        max-width: 100%;
-        padding:0.5em;
-        align-items: center;
-        justify-content: center;
-    }
+
     header img{
         width: 40px;
         height: auto;
     }
-    body{
-        padding:0;
-        margin:0;
-        background-color: #FFCDB2;
-        font-family:'Poppins', sans-serif;;
-    }
-    #title{
-        grid-column: 2/3;
-    }
+
+
     nav{
         background-color: #FFB4A2;
         margin: 0 auto;

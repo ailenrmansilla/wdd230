@@ -36,6 +36,8 @@
     }
     #current-date{
         grid-column: 1/5;
+        grid-row:2;
+        text-align: center;
     }
     .open{
         display:block;
