@@ -10,7 +10,7 @@ const last_modified = `${month}/${day}/${year} ${hour}:${minute}:${second}`;
 document.querySelector('#updated').textContent = last_modified;
 
 function toggleMenu(){
-    console.log('Checking')
+
     document.getElementById("primary-nav").classList.toggle("open");
 
 }
