@@ -4,6 +4,7 @@ body{
     margin:0;
     background-color: #FFCDB2;
     font-family:'Poppins', sans-serif;
+    font-size: 22px;
 }
 h1,h2,h3{
     color: #6D6875;
@@ -13,28 +14,35 @@ p{
 }
 header{
     display:grid;
-    grid-template-columns: 20% 25% 35% 20%;
+    grid-template-columns: 20% 25% 30% 25%;
     max-width: 100%;
-    padding:0.2em;
+    padding:0.3em;
     align-items: center;
     justify-content: center;
     background-color: #E5989B;
 }
-header img{
-    width: 40px;
-    height: auto;
-}
 #logo{
     grid-column: 1/2;
+    width: 70px;
+    height: auto;
 }
 #title{
     grid-column: 2/3;
     text-align: center;
+    font-size: 18px;
 }
 #social-media-links{
     grid-column:4/5;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.social-media{
+    width: 40px;
+    height: auto;
 }
 #current-date{
+    border: 1px solid rgb(24, 24, 24);
+    padding: 0.5em;
     grid-column: 1/5;
     grid-row:2;
     text-align: center;
@@ -50,6 +58,9 @@ nav{
     grid-column:3/4;
     background-color: #FFB4A2;
     margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #e56370;
+    border-radius: 1px 1px 3px;
 }
 nav ul{
     list-style: none;
@@ -102,4 +113,46 @@ footer{
     display:flex;
     align-items: center;
     justify-content: center;
+}
+#call-to-action{
+    margin: 0 auto;
+    background-color:#eee;
+    border: 1px solid #333;
+    height: 300px;
+    width:100%;
+}
+#event{
+    margin: 0 auto;
+    background-color:#eee;
+    border: 1px solid #333;
+    height: 300px;
+    width:100%;
+}
+#weather{
+    margin: 0 auto;
+    background-color:#eee;
+    border: 1px solid #333;
+    height: 300px;
+    width:100%;
+}
+#new-release{
+    margin: 0 auto;
+    background-color:#eee;
+    border: 1px solid #333;
+    height: 300px;
+    width:100%;
+}
+#spotlight{
+    margin: 0 auto;
+    background-color:#eee;
+    border: 1px solid #333;
+    height: 600px;
+    width:100%;
+}
+.spotlights{
+    margin: 15px 15px 15px 15px;
+    background-color:#eee;
+    border: 1px solid #333;
+    height: 280px;
+    width: auto;
 }

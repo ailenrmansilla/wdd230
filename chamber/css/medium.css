@@ -1,60 +1,39 @@
 @media only screen and (min-width:576px){
-
-    header img{
-        width: 40px;
+     header img{
+        width: 100px;
         height: auto;
     }
-
-
-    nav{
-        background-color: #FFB4A2;
-        margin: 0 auto;
-    }
-    nav ul{
-        list-style: none;
-        padding: 0;
-        margin:0;
-    }
-    nav ul li:first-child {
-        display: block;
-    }
-    nav ul li {
-        display: none;
-    }
-    nav ul a {
-        display: block;
-        padding: 0.75rem;
-        text-align: left;
-        text-decoration: none;
-        color: #6D6875;
-        font-size: 18px;
-    }
-
-    nav ul li a:hover {
-        background-color: #E5989B;
-    }
-
-    nav ul li.active a{ /*when we are in the li active class*/
-        background-color: #B5838D;
-        color: rgb(240, 214, 214);
-    }
-
-    nav button{
-        margin: .2rem 2vw;
-        background-color: transparent;
-        border: none;
-        font-size: 2rem;
-        color: #FFB4A2;
-        border-top: 1px solid #B5838D;
+    #title{
+        font-size: 24px;
     }
     main{
         display:grid;
-        grid-template-columns: 1fr 1fr;  
+        grid-template-columns: 60% 40%;  
+        width:100%;
+        align-content: center;
+        margin:0 auto;
     }
-    footer{
-        background-color: #B5838D;
-        text-align: center;
-        padding: .2em;
+    #call-to-action{
+        grid-column: 1/3;
+        grid-row: 1;
     }
-
+    #event{
+        grid-column: 1/2;
+        grid-row:4;
+    }
+    #weather{
+        grid-column: 2/3;
+        grid-row:4;
+    }
+    #new-release{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    #spotlight{
+        grid-column:1/3;
+        grid-row: 3;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        height:auto;
+    }
 }
