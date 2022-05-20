@@ -90,7 +90,7 @@
         display: block;
     }
 
-    #new-release{
+    #news-release{
         grid-column: 2/3;
         grid-row: 3/4;
     }
