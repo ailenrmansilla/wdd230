@@ -16,7 +16,8 @@ header{
     display:grid;
     grid-template-columns: 20% 25% 30% 25%;
     max-width: 100%;
-    padding:0.3em;
+    grid-gap:10px;
+    padding:0.5em;
     align-items: center;
     justify-content: center;
     background-color: #E5989B;
@@ -25,6 +26,7 @@ header{
     grid-column: 1/2;
     width: 70px;
     height: auto;
+    margin:10px;
 }
 #title{
     grid-column: 2/3;
@@ -100,6 +102,10 @@ nav button{
     border-top: 1px solid #B5838D;
 }
 main{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-right:10px;
+    margin-left:10px;
     display:flex;
     flex-direction: column;
     padding: 0.5em;
@@ -115,35 +121,39 @@ footer{
     justify-content: center;
 }
 #call-to-action{
-    margin: 0 auto;
+    margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
 #event{
-    margin: 0 auto;
+    margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
 #weather{
-    margin: 0 auto;
+    margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
+#join{
+    margin-top:10px;
+    display:none;
+}
 #new-release{
-    margin: 0 auto;
+    margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
 #spotlight{
-    margin: 0 auto;
+    margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 600px;
@@ -155,4 +165,7 @@ footer{
     border: 1px solid #333;
     height: 280px;
     width: auto;
+}
+#spotlight-3{
+    display:none;
 }

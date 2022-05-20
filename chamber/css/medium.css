@@ -11,7 +11,7 @@
         grid-template-columns: 60% 40%;  
         width:100%;
         align-content: center;
-        margin:0 auto;
+        margin:10px 10px 10px 10px;
     }
     #call-to-action{
         grid-column: 1/3;
@@ -19,11 +19,11 @@
     }
     #event{
         grid-column: 1/2;
-        grid-row:4;
+        grid-row:5;
     }
     #weather{
         grid-column: 2/3;
-        grid-row:4;
+        grid-row:5;
     }
     #new-release{
         grid-column: 1/3;
@@ -35,5 +35,18 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
         height:auto;
+    }
+    #join{
+        display: block;
+        margin-top: 10px;
+        background-color:#eee;
+        border: 1px solid #333;
+        height: 300px;
+        width:100%;
+        grid-column:1/3;
+        grid-row:4;
+    }
+    #spotlight-3{
+        display:none;
     }
 }
