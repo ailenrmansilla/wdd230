@@ -13,25 +13,29 @@
         align-content: center;
         margin:10px 10px 10px 10px;
     }
-    #call-to-action{
+    #banner{
         grid-column: 1/3;
-        grid-row: 1;
+        grid-row:1;
     }
-    #event{
-        grid-column: 1/2;
-        grid-row:5;
-    }
-    #weather{
-        grid-column: 2/3;
-        grid-row:5;
-    }
-    #news-release{
+    #call-to-action{
         grid-column: 1/3;
         grid-row: 2;
     }
+    #event{
+        grid-column: 1/2;
+        grid-row:6;
+    }
+    #weather{
+        grid-column: 2/3;
+        grid-row:6;
+    }
+    #news-release{
+        grid-column: 1/3;
+        grid-row: 3;
+    }
     #spotlight{
         grid-column:1/3;
-        grid-row: 3;
+        grid-row: 4;
         display:grid;
         grid-template-columns: 1fr 1fr;
         height:auto;
@@ -44,7 +48,7 @@
         height: 300px;
         width:100%;
         grid-column:1/3;
-        grid-row:4;
+        grid-row:5;
     }
     #spotlight-3{
         display:none;

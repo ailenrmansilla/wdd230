@@ -55,6 +55,7 @@ header{
     display:block;
 }
 
+
 nav{
     grid-column:3/4;
     background-color: #FFB4A2;
@@ -85,6 +86,7 @@ nav ul a {
 
 nav ul li a:hover {
     background-color: #E5989B;
+    color: whitesmoke;
 }
 
 nav ul li.active a{ /*when we are in the li active class*/
@@ -109,6 +111,16 @@ main{
     flex-direction: column;
     padding: 0.5em;
 }
+#banner{ 
+    display: none;
+    position: relative;
+    background-color: #B5838D;
+    width: 100%;
+}
+#banner p{
+    color:#f0d6d6;
+    text-align: center;
+}
 footer{
     background-color: #B5838D;
     text-align: center;
@@ -121,12 +133,23 @@ footer{
     justify-content: center;
 }
 #call-to-action{
+    position: relative;
     margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
+button{
+    position: absolute;
+    top:80%;
+    left: 10%;
+    background-color:#B5838D;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    color:#f0d6d6;
+}
+
 #event{
     margin-top:10px;
     background-color:#eee;
