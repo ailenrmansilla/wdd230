@@ -28,8 +28,12 @@
 </head>
 <body>
 <!-- HEADER HERE -->
-	<header>
- <h1>Company Name Here</h1>
+	<header class="clearfix">
+    <figure class="logo">
+        <img src="images/logo0.png" alt="logo" 
+        srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+    </figure>
+    <h1>Company Name Here</h1>
         <h2>Possible Slogan or Tagline</h2>
     </header>
     
@@ -46,9 +50,25 @@
     
     
 <!-- CONTENT HERE -->
-    <main>
+    <main class="clearfix">
         <h1>Products</h1>
-        <p>The page name should almost exactly match the menu item. </p>
+        <figure class="myphoto">
+            <img src="images/golgotha.jpg" alt="golgotha" sizes="50vw"
+            srcset="images/golgotha200.jpg 200w,
+                    images/golgotha500.jpg 500w,
+                    images/golgotha800.jpg 800w,
+                    images/golgotha1100.jpg 1100w">
+        
+            <figcaption>The Garden Tomb</figcaption>
+            </figure>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <picture class="photoA">
+            <source media="(max-width:200px)" srcset="images/golgotha200.jpg"> <!--the image has to be 50% of media query width because we are displaying it at 50% in the css file-->
+            <source media="(max-width:500px)" srcset="images/golgotha500.jpg">
+            <source media="(max-width:800px)" srcset="images/golgotha800.jpg">
+            <img src="images/golgotha1100.jpg" alt="church">
+            <div>Church of the Beatitudes</div>
+        </picture>
     </main>
     
 <!-- FOOTER HERE -->   
