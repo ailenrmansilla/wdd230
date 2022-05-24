@@ -176,8 +176,13 @@ button{
     width:100%;
 }
 #join{
+    position: relative;
     margin-top:10px;
     display:none;
+}
+#join button{
+    display:none;
+
 }
 #news-release{
     margin-top:10px;

@@ -93,6 +93,7 @@
         grid-column:1/2;
         grid-row:4/5;
         display: block;
+        position: relative;
     }
 
     #news-release{
