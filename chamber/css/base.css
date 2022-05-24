@@ -137,9 +137,20 @@ footer{
     margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
-    height: 300px;
+
+}
+#hero-call-to-action img{
     width:100%;
 }
+#welcome{
+    position: absolute;
+    top:10%;
+    left:5%;
+    color: black;
+    text-shadow: 1px 1px #b0acb6;
+
+}
+
 button{
     position: absolute;
     top:80%;
