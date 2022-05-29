@@ -11,6 +11,7 @@ h1,h2,h3{
 }
 p{
     color:#6D6875;
+    font-size:22px;
 }
 header{
     display:grid;
@@ -135,8 +136,10 @@ footer{
 #call-to-action{
     position: relative;
     margin-top:10px;
-    background-color:#eee;
-    border: 1px solid #333;
+    background-color:#B5838D;
+    color:#f0d6d6;
+    text-align: center;
+    
 
 }
 #hero-call-to-action img{
@@ -144,6 +147,7 @@ footer{
 }
 #welcome{
     position: absolute;
+    text-align: center;
     top:10%;
     left:5%;
     color: black;
@@ -153,6 +157,7 @@ footer{
 
 button{
     position: absolute;
+    text-align: center;
     top:80%;
     left: 10%;
     background-color:#B5838D;
@@ -162,48 +167,84 @@ button{
 }
 
 #event{
+    text-align: center;
     margin-top:10px;
-    background-color:#eee;
-    border: 1px solid #333;
+    background-color:#B5838D;
+    color:#f0d6d6;
+    
     height: 300px;
+    
+}
+#event img{
     width:100%;
 }
 #weather{
     margin-top:10px;
-    background-color:#eee;
+    text-align: center;
+    background-color:#1f567c;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
 #join{
+    text-align: center;
     position: relative;
     margin-top:10px;
     display:none;
 }
+
 #join button{
     display:none;
 
 }
+#join button:hover{
+    background-color: #FFB4A2;
+    color:#eee;
+}
+
+#join-button:hover{
+    background-color: #FFB4A2;
+    color:#eee;
+    
+}
 #news-release{
+    position:relative;
     margin-top:10px;
     background-color:#eee;
     border: 1px solid #333;
     height: 300px;
     width:100%;
 }
+#news-release p{
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 30px;
+    color: #eee;
+    background-color: #E5989B;
+    border: 1px solid #B5838D;
+}
+#news-release-picture{
+    height:300px;
+    max-width:100%;
+}
 #spotlight{
+    text-align: center;
     margin-top:10px;
-    background-color:#eee;
-    border: 1px solid #333;
+    background-color:#B5838D;
+    color:#f0d6d6;
     height: 600px;
     width:100%;
 }
 .spotlights{
     margin: 15px 15px 15px 15px;
-    background-color:#eee;
+    background-color:#E5989B;
     border: 1px solid #333;
     height: 280px;
     width: auto;
+}
+.spotlights p{
+    color:#f0d6d6;
 }
 #spotlight-3{
     display:none;

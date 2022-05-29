@@ -15,6 +15,9 @@
         justify-content: center;
         background-color: #E5989B;
     }
+    p{
+        font-size: 28px;
+    }
 
     nav ul li:first-child {
         display: none;
@@ -101,6 +104,7 @@
         grid-row: 4/5;
     }
     #spotlight{
+        color:#f0d6d6;
         grid-column:3/4;
         grid-row: 2/5;
         display:grid;
@@ -114,6 +118,7 @@
     }
     .spotlights{
         margin: 10px 10px 10px 10px;
+        
     }
 
     footer{

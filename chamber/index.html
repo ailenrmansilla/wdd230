@@ -58,16 +58,20 @@
             <img src="images/event.jpg" alt="event">
         </div>
         <div id="weather">
-            <!--buscar en youtube o copiar imagen de internet-->
-            <p>Weather</p>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n32d94n60d65/rosario/?unit=us" data-label_1="ROSARIO" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="original" >Rosario Weather</a>
         </div>
         <div id="news-release">
-            <!--copiar noticia, imagen-->
-            <p>News release</p>
+            <picture id="news-release-picture">
+                <source media="(max-width:200px)" srcset="images/news-release-small.jpg"> 
+                <source media="(max-width:500px)" srcset="images/news-release-medium.jpg">
+                <source media="(max-width:800px)" srcset="images/news-release-large.jpg">
+                <img src="images/news-release-large.jpg" alt="news release">
+            </picture>
+            <p>News Release</p>
         </div>
         <div id="spotlight">
-            <div class="spotlights" id="spotlight-1"><p>Spotlight 1</p></div>
-            <div class="spotlights" id="spotlight-2"><p>Spotlight 2</p></div>
+            <div class="spotlights" id="spotlight-1"><p>We are always in contact<br>Send us your inquiry</p></div>
+            <div class="spotlights" id="spotlight-2"><p>Trade list:<br>list of verified commercial and institutional contacts</p></div>
             <div class="spotlights" id="spotlight-3"><p>Spotlight 3</p></div>
         </div>
     </main>

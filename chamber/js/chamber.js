@@ -9,6 +9,8 @@ const last_modified = `${month}/${day}/${year} ${hour}:${minute}:${second}`;
 
 document.querySelector('#updated').textContent = last_modified;
 
+//togglemenu
+
 function toggleMenu(){
 
     document.getElementById("primary-nav").classList.toggle("open");
@@ -22,12 +24,19 @@ window.onresize = () => {if(window.innerWidth>992){
 }
 };
 
+//current date
 const today = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(today);
 console.log(fulldate);
 document.getElementById("current-date").textContent=fulldate;
 
+//banner on mondays and tuesdays
 const today_day = today.getDate();
 if (today_day == 1 || today_day ==2){
     document.getElementById("banner").style.display = "block";
 }
+
+//weather code
+
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
