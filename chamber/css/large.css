@@ -22,7 +22,7 @@
     nav ul li:first-child {
         display: none;
     }
-    #logo{
+    .logo{
         grid-column: 1/2;
         width: 120px;
         height: auto;

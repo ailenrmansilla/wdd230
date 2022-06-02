@@ -1,15 +1,4 @@
-<!--
-- The main section will not be built at this stage of the project but placeholder blocks and general layout should be started. The illustrations provide the sections that are required and where they are to be placed in the respective view sizes. 
-  The sections include hero image and call to action, news, event(s), weather, join, and two to three company spotlights.
-** Limit the main content area.
-- Ensure that your page meets the Web Frontend Dev Standards checklist.
-*✔ Complete all sections of the page as shown in the examples. 
-  You will need to fill the document with viable content or near complete content. It is OK for you to use some placeholders as this is a work in progress.
-** Ensure that the page is responsive in all the major views.
-** The page must meet the base 230 Web Frontend Dev Standards in order to be considered for full credit.
--- HTML Validation
--- Accessibility validation
--->
+<!-- Copy and modified for each week -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,12 +18,12 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
+        <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
         <h1 id="title">Rosario Chamber of Commerce</h1>
         
         <nav>
             <ul class="navigation" id="primary-nav">
-                <li id="hamburger-button">&#9776</li>
+                <li id="hamburger-button">&#9776;</li>
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Location</a></li>
@@ -60,7 +49,7 @@
                 <img src="images/wdd230-org.jpg" alt="chamber of commerce">
             </picture>
 
-            <strong><p id="welcome">Welcome to Rosario Chamber of Commerce</p></strong>
+            <p id="welcome"><strong>Welcome to Rosario Chamber of Commerce</strong></p>
             <button id="join-button" type="button">Join the Chamber</button>
         </div>
         <div id="join">
@@ -77,7 +66,7 @@
         </div>
         <div id="weather">
             <h3>Weather</h3>
-            <img src="images/weather.png" height="60">
+            <img src="images/weather.png" height="60" alt="weather-image">
             <p><span id='temperature'>34</span>°F <br></p>
             <hr>
             <p>Wind speed:<span id='windspeed'>6</span>mph</p>
@@ -100,7 +89,7 @@
     </main>
     
     <footer>
-        <img id="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
+        <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
         <h2>Rosario Chamber of Commerce</h2>
         <h3>Rosario, Argentina</h3>
         <p>Telephone: +549638386489
