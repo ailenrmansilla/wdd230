@@ -98,6 +98,10 @@
         display: block;
         position: relative;
     }
+    #join button{
+        font-size: 16px;
+        left:30%;
+    }
 
     #news-release{
         grid-column: 2/3;

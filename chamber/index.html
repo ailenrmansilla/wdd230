@@ -1,3 +1,17 @@
+<!--The header must contain a logo, site name, and 
+**navigation (nav), spanning the entire screen. You may elect to limit the content width within the header.
+- The main section will not be built at this stage of the project but placeholder blocks and general layout should be started. The illustrations provide the sections that are required and where they are to be placed in the respective view sizes. 
+  The sections include hero image and call to action, news, event(s), weather, join, and two to three company spotlights.
+** Limit the main content area.
+- Ensure that your page meets the Web Frontend Dev Standards checklist.
+*✔ Complete all sections of the page as shown in the examples. 
+  You will need to fill the document with viable content or near complete content. It is OK for you to use some placeholders as this is a work in progress.
+** Ensure that the page is responsive in all the major views.
+** The page must meet the base 230 Web Frontend Dev Standards in order to be considered for full credit.
+-- HTML Validation
+-- Accessibility validation
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,24 +69,25 @@
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div id="event">
+            <!--Use picture y scrset here-->
             <img src="images/event.jpg" alt="event">
         </div>
         <div id="weather">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/n32d94n60d65/rosario/?unit=us" data-label_1="ROSARIO" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="original" >Rosario Weather</a>
+            <!--Print values-->
         </div>
         <div id="news-release">
             <picture id="news-release-picture">
                 <source media="(max-width:200px)" srcset="images/news-release-small.jpg"> 
                 <source media="(max-width:500px)" srcset="images/news-release-medium.jpg">
                 <source media="(max-width:800px)" srcset="images/news-release-large.jpg">
-                <img src="images/news-release-large.jpg" alt="news release">
+                <img src="images/news-release-large.jpg" alt="news release" height="300">
             </picture>
             <p>News Release</p>
         </div>
         <div id="spotlight">
             <div class="spotlights" id="spotlight-1"><p>We are always in contact<br>Send us your inquiry</p></div>
             <div class="spotlights" id="spotlight-2"><p>Trade list:<br>list of verified commercial and institutional contacts</p></div>
-            <div class="spotlights" id="spotlight-3"><p>Spotlight 3</p></div>
+            <div class="spotlights" id="spotlight-3"><p>Advice for the virtual conversion of your company</p></div>
         </div>
     </main>
     
