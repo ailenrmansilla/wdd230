@@ -13,6 +13,9 @@ p{
     color:#6D6875;
     font-size:22px;
 }
+div{
+    box-shadow: 5px 5px 3px rgb(179, 123, 123);
+}
 header{
     display:grid;
     grid-template-columns: 20% 25% 30% 25%;
@@ -22,7 +25,7 @@ header{
     justify-content: center;
     background-color: #E5989B;
 }
-#logo{
+#logo{box-shadow:0px 0px;
     grid-column: 1/2;
     width: 70px;
     height: auto;
@@ -34,6 +37,7 @@ header{
     font-size: 18px;
 }
 #social-media-links{
+    box-shadow:0px 0px;
     grid-column:4/5;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -104,13 +108,11 @@ nav button{
     border-top: 1px solid #B5838D;
 }
 main{
-    margin-top:20px;
-    margin-bottom: 20px;
-    margin-right:10px;
-    margin-left:10px;
+    margin:auto;
     display:flex;
     flex-direction: column;
     padding: 0.5em;
+    max-width:1300px;
 }
 #banner{ 
     display: none;
@@ -169,14 +171,14 @@ button{
 #event{
     text-align: center;
     margin-top:10px;
-    background-color:#B5838D;
+    background-color:aliceblue;
     color:#f0d6d6;
-    
     height: 300px;
     
 }
 #event img{
-    width:100%;
+    max-width:100%;
+    max-height: 100%;
 }
 #weather{
     margin-top:10px;
@@ -185,6 +187,16 @@ button{
     border: 1px solid #333;
     height: 300px;
     width:100%;
+}
+#weather p{
+    color:aliceblue;
+    text-shadow: #6D6875;
+    font-size:20px;
+}
+#weather h3{
+    color:aliceblue;
+    text-shadow: #6D6875;
+    font-size: 24px;
 }
 #join{
     text-align: center;
@@ -225,8 +237,9 @@ button{
     background-color: #E5989B;
     border: 1px solid #B5838D;
 }
-#news-release-picture{
-    width:100%;
+#news-release img{
+    max-width:100%;
+    max-height: 100%;
 }
 #spotlight{
     text-align: center;
@@ -234,10 +247,10 @@ button{
     background-color:#B5838D;
     color:#f0d6d6;
     height: 600px;
-    width:100%;
+    max-width:100%;
 }
 .spotlights{
-    margin: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
     background-color:#E5989B;
     border: 1px solid #333;
     height: 280px;

@@ -1,5 +1,4 @@
-<!--The header must contain a logo, site name, and 
-**navigation (nav), spanning the entire screen. You may elect to limit the content width within the header.
+<!--
 - The main section will not be built at this stage of the project but placeholder blocks and general layout should be started. The illustrations provide the sections that are required and where they are to be placed in the respective view sizes. 
   The sections include hero image and call to action, news, event(s), weather, join, and two to three company spotlights.
 ** Limit the main content area.
@@ -69,18 +68,27 @@
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div id="event">
-            <!--Use picture y scrset here-->
-            <img src="images/event.jpg" alt="event">
+            <picture>
+                <source media="(max-width:200px)" srcset="images/event-small.jpg"> 
+                <source media="(max-width:500px)" srcset="images/event-medium.jpg">
+                <source media="(max-width:800px)" srcset="images/event-large.jpg">
+                <img src="images/event.jpg" alt="event" width="300">
+            </picture>
         </div>
         <div id="weather">
-            <!--Print values-->
+            <h3>Weather</h3>
+            <img src="images/weather.png" height="60">
+            <p><span id='temperature'>54</span>°F <br></p>
+            <hr>
+            <p>Wind speed:<span id='windspeed'>6</span>mph</p>
+            <p>Windchill: <span id='windchill'>N/A</span></p>
         </div>
         <div id="news-release">
             <picture id="news-release-picture">
                 <source media="(max-width:200px)" srcset="images/news-release-small.jpg"> 
                 <source media="(max-width:500px)" srcset="images/news-release-medium.jpg">
                 <source media="(max-width:800px)" srcset="images/news-release-large.jpg">
-                <img src="images/news-release-large.jpg" alt="news release" height="300">
+                <img src="images/news-release-large.jpg" alt="news release">
             </picture>
             <p>News Release</p>
         </div>
