@@ -239,7 +239,7 @@ button{
 }
 #news-release img{
     max-width:100%;
-    max-height: 100%;
+    max-height: 300px;
 }
 #spotlight{
     text-align: center;
