@@ -30,10 +30,3 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 console.log(fulldate);
 document.getElementById("current-date").textContent=fulldate;
 
-//banner on mondays and tuesdays
-const today_day = today.getDate();
-if (today_day == 1 || today_day ==2){
-    document.getElementById("banner").style.display = "block";
-}
-
-//weather code

@@ -15,6 +15,7 @@ p{
 }
 div{
     box-shadow: 5px 5px 3px rgb(179, 123, 123);
+
 }
 header{
     display:grid;
@@ -114,16 +115,7 @@ main{
     padding: 0.5em;
     max-width:1300px;
 }
-#banner{ 
-    display: none;
-    position: relative;
-    background-color: #B5838D;
-    width: 100%;
-}
-#banner p{
-    color:#f0d6d6;
-    text-align: center;
-}
+
 footer{
     background-color: #B5838D;
     text-align: center;
@@ -141,8 +133,6 @@ footer{
     background-color:#B5838D;
     color:#f0d6d6;
     text-align: center;
-    
-
 }
 #hero-call-to-action img{
     width:100%;
@@ -155,17 +145,6 @@ footer{
     color: black;
     text-shadow: 1px 1px #b0acb6;
 
-}
-
-button{
-    position: absolute;
-    text-align: center;
-    top:80%;
-    left: 10%;
-    background-color:#B5838D;
-    border-radius: 20px 20px 20px 20px;
-    padding: 10px;
-    color:#f0d6d6;
 }
 
 #event{
@@ -205,20 +184,7 @@ button{
     display:none;
 }
 
-#join button{
-    display:none;
 
-}
-#join button:hover{
-    background-color: #FFB4A2;
-    color:#eee;
-}
-
-#join-button:hover{
-    background-color: #FFB4A2;
-    color:#eee;
-    
-}
 #news-release{
     position:relative;
     margin-top:10px;
