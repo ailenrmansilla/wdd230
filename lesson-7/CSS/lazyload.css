@@ -3,19 +3,28 @@ body{
     align-items: center;
     font-family: Arial, sans-serif;
 }
+main{
+    margin:auto;
+    padding: 0.5em;
+    max-width:1300px;
+}
+div{
+    width: 50%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+}
 h1{
     color:rgb(30, 30, 30);
 
-}
-div{
-    display: flex;
-    flex-flow: column;
 }
 div picture img[data-src] {
     filter: blur(0.2em);
 }
   
 div picture img {
+    margin-top: 20px;
+    max-width: 100%;
     border: 1px solid black;
     filter: blur(0em);
     transition: filter 0.3s ease;
