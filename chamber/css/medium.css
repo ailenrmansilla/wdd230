@@ -74,5 +74,7 @@
     #spotlight-3{
         display:none;
     }
-
+    picture img:hover{
+        border-radius: 5px 150px;
+    }
 }

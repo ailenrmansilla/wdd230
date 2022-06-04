@@ -134,4 +134,15 @@
         text-align: center;
     }
 
+    .pictures-rosario{
+        display:flex;
+        flex-flow: column;
+        padding: 1em;
+        margin: auto;   
+    }
+    picture img:hover{
+        border-radius: 5px 150px;
+    }
+    
+
 }

@@ -36,4 +36,47 @@ if (today_day == 1 || today_day ==2){
     document.getElementById("banner").style.display = "block";
 }
 
-//weather code
+//lazy loading code
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+
+
+function preloadImage(image) {
+    const src = image.getAttribute('data-src');
+    if (!src){
+        return;
+    } 
+    image.src = src;
+    image.removeAttribute("data-src");
+};
+
+const imageOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 500px 0px"
+};
+
+const imageObserver = new IntersectionObserver((entries,imageObserver) =>{
+    entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+        return; 
+    } else{
+        preloadImage(entry.target);
+        imageObserver.unobserve(entry.target);
+    }
+})} , imageOptions);
+
+imagesToLoad.forEach(image =>{
+    imageObserver.observe(image);
+});
+
+// local storage
+
+// initialize display elements
+const visitsDisplay = document.querySelector("#visits");
+
+// get the stored value in localStorage
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+// increment the number of visits.
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);

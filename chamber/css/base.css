@@ -262,3 +262,18 @@ button{
 #spotlight-3{
     display:none;
 }
+
+#rosario-title{
+    text-align: center;
+}
+picture img{
+    max-width: 100%;
+    border: 1px solid #333;
+}
+#pictures-rosario{
+    display:flex;
+    flex-flow: column;
+    padding: 1em;
+    margin: auto;
+    width: 1200px;
+}
