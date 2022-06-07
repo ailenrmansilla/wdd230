@@ -18,32 +18,32 @@ div{
 }
 header{
     display:grid;
-    grid-template-columns: 20% 25% 30% 25%;
-    max-width: 100%;
-    grid-gap:10px;
+    grid-template-columns: 20% 30% 20% 30%;
+    width: 100%;
+    grid-gap:0.1em;
     align-items: center;
     justify-content: center;
     background-color: #E5989B;
 }
 .logo{box-shadow:0px 0px;
     grid-column: 1/2;
-    width: 70px;
+    width: 60px;
     height: auto;
     margin:10px;
 }
 #title{
     grid-column: 2/3;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
 }
 #social-media-links{
     box-shadow:0px 0px;
-    grid-column:4/5;
+    grid-column:3/4;
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
 .social-media{
-    width: 40px;
+    max-width: 40px;
     height: auto;
 }
 #current-date{
@@ -62,7 +62,7 @@ header{
 
 
 nav{
-    grid-column:3/4;
+    grid-column:4/5;
     background-color: #FFB4A2;
     margin: 0 auto;
     padding: 1em;

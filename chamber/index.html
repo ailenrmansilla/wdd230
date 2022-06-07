@@ -1,3 +1,8 @@
+<!-- Optimize all the images you are using on the page and any images you use going forward to help with the performance of the pages.
+Use min-width instead of max-width, so it is mobile first. I don't see the labels and we want to use the corresponding breakpoints for small, medium, and large. 
+Fix the header so it takes allof the width of the screen
+BOM file -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +23,10 @@
     <header>
         <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
         <h1 id="title">Rosario Chamber of Commerce</h1>
-        
+        <div id="social-media-links">
+            <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
+            <a class="social-media" href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
         <nav>
             <ul class="navigation" id="primary-nav">
                 <li id="hamburger-button">&#9776;</li>
@@ -28,10 +36,7 @@
                 <li><a href="#">Contact</a></li>    
             </ul>
         </nav>
-        <div id="social-media-links">
-        <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
-        <a class="social-media" href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
-        </div>
+
         <span id="current-date"></span>
     </header>
 
