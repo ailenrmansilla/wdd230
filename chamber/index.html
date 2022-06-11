@@ -2,6 +2,7 @@
 Use min-width instead of max-width, so it is mobile first. I don't see the labels and we want to use the corresponding breakpoints for small, medium, and large. 
 Fix the header so it takes allof the width of the screen
 BOM file -->
+<!-- Add images in the spotlights -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,16 +41,15 @@ BOM file -->
         <span id="current-date"></span>
     </header>
 
-    <main>
+    <main id="index-main">
         <div id="banner">
             <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
         </div>
         <div id="call-to-action">
             <picture id="hero-call-to-action">
-                <source media="(max-width:200px)" srcset="images/small.jpg"> 
-                <source media="(max-width:500px)" srcset="images/medium.jpg">
-                <source media="(max-width:800px)" srcset="images/large.jpg">
-                <img src="images/wdd230-org.jpg" alt="chamber of commerce">
+                <source media="(min-width:500px)" srcset="images/medium.jpg">
+                <source media="(min-width:800px)" srcset="images/large.jpg">
+                <img src="images/small.jpg" alt="chamber of commerce">
             </picture>
 
             <p id="welcome"><strong>Welcome to Rosario Chamber of Commerce</strong></p>
@@ -70,7 +70,7 @@ BOM file -->
         <div id="weather">
             <h3>Weather</h3>
             <img src="images/weather.png" height="60" alt="weather-image">
-            <p><span id='temperature'>34</span>°F <br></p>
+            <p><span id='temperature'>34</span>°F     Partly Cloudy</p>
             <hr>
             <p>Wind speed:<span id='windspeed'>6</span>mph</p>
             <p>Windchill: <span id='windchill'>N/A</span></p>

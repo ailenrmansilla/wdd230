@@ -28,7 +28,10 @@ window.onresize = () => {if(window.innerWidth>992){
 const today = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(today);
 console.log(fulldate);
-document.getElementById("current-date").textContent=fulldate;
+document.getElementById("current-date").textContent = fulldate;
+document.getElementById("date").value = fulldate;
+const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+document.getElementById("time").value = time;
 
 //banner on mondays and tuesdays
 const today_day = today.getDate();

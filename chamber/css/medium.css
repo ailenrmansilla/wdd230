@@ -11,7 +11,7 @@
     #title{
         font-size: 22px;
     }
-    main{
+    #index-main{
         display:grid;
         grid-template-columns: 60% 40%;  
         width:100%;
@@ -79,7 +79,7 @@
     #spotlight-3{
         display:none;
     }
-    picture img:hover{
+    #pictures-rosario img:hover{
         border-radius: 5px 150px;
     }
 }

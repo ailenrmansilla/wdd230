@@ -76,7 +76,7 @@
         color: rgb(240, 214, 214);
     }
 
-    main{
+    #index-main{
         padding:0.5em;
         display:grid;
         grid-template-columns: 20% 60% 20%;
@@ -141,7 +141,7 @@
         padding:0.5em;
     }
     
-    .pictures-rosario{
+    #pictures-rosario{
         display:flex;
         flex-flow: column;
         padding: 1em;
