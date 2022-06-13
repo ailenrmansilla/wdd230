@@ -295,7 +295,6 @@ form fieldset{
     margin: 2rem 0;
     border: 1px solid #555;
     border-radius: 10px;
-    padding: .5rem 2%;
     width: 96%;
     max-width: 600px; 
 }
@@ -341,6 +340,15 @@ form label.top input:required{
 form label.top input:required:valid{
     border-left: rgb(5, 178, 5) solid 5px;
 }
+#memberhsips-info{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-color: #E5989B;
+    color: #555;
+    font-size: 18px;
+}
+
 #thanks{
     display: flex;
     flex-flow: column;

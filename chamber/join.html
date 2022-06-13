@@ -35,19 +35,27 @@
     </header>
 
     <main id="main-form">
+        <div id="memberhsips-info">
+            <ul>
+                <li id="info-membership1">Non-Profit Organizations Membership: There is no fee. They have free access to chamber meetings and networking events.</li>
+                <li id="info-membership2">Bronze Membership: $80 yearly fee. They also have free access to trainings.</li>
+                <li id="info-membership3">Silver Membership: $120 yearly fee.They also have access to premier research, resources and data to help inform business decisions.</li>
+                <li id="info-membership4">Golden Membership: $200 yearly fee. They have access to all of above benefits and opportunities for regional and national visibility.</li>
+            </ul>
+        </div>
       <form method="get" action="thanks.html">
         <fieldset>
             <legend>Applicant information</legend>
             <label class="top">First Name*<input type="text" name="fname" required></label>
             <label class="top">Last Name*<input type="text" name="lname" required></label>
-            <label class="top">Business Position<input type="text" name="bposition" title="business position" placeholder="Sales manager"></label>
+            <label class="top">Business Position/Title<input type="text" name="bposition" placeholder="Sales manager"></label>
             <label class="top">Email*<input type="email" name="email" placeholder="example@gmail.com" required></label>
             <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" required></label>
-            <label class="top">Business Name*<input type="text" name="bname" title="business name" placeholder="Business Name" required></label>
+            <label class="top">Business Name/Title*<input type="text" name="bname" placeholder="Business Name/Title" required></label>
             <label class="top">Membership Level
                 <select name="membership">
                     <option value="">Please Select &#9662;</option>
-                    <option value="NP">NP Membership (non profit organizations) Without fee</option>
+                    <option value="NP">NP Membership (non profit organizations)</option>
                     <option value="BM">Bronze Membership</option>
                     <option value="SM">Silver Membership</option>
                     <option value="GM">Gold Membership</option>

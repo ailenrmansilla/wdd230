@@ -83,3 +83,4 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+
