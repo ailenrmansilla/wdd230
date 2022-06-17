@@ -402,3 +402,11 @@ form label.top input:required:valid{
 	display:none; 
     /* I just one to show text, not the picture*/
 }
+#view-options-directory{
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    padding: 0.5em;
+    align-items: center;
+}
+
