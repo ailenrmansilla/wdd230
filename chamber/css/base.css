@@ -394,10 +394,6 @@ form label.top input:required:valid{
 	display: flex;
 	flex-direction: column;
 }
-.list section{
-    display: flex;
-    flex-flow: row;
-}
 .list img{
 	display:none; 
     /* I just one to show text, not the picture*/
