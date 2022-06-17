@@ -409,4 +409,10 @@ form label.top input:required:valid{
     padding: 0.5em;
     align-items: center;
 }
+.directory-contacts a{
+    color:#1f567c;
+}
+.directory-contacts a:hover{
+    color:#e56370;
+}
 
