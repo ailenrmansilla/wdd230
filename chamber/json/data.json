@@ -1,0 +1,76 @@
+{
+    "directory":[
+        {
+        "name" : "Nature Store",
+        "address" : "España 598, Rosario",
+        "phone" : "+3412972548",
+        "website" : "https://tiendasnaturales.com.ar/",
+        "icon" : "images/contact1.jpg",
+        "membershiplevel" : "Bronze"
+        },
+        {
+        "name" : "FarmaVip",
+        "address" : "Cordoba 2394, Rosario",
+        "phone" : "+3412083990",
+        "website" : "farmavip.com.ar",
+        "icon" : "images/contact2.jpg",
+        "membershiplevel" : "Silver"
+        },
+        {
+        "name" : "Infinite Backery",
+        "address" : "Santiago 217, Rosario",
+        "phone" : "+341157186363",
+        "website" : "http://www.infinitapanaderia.com/",
+        "icon" : "images/contact3.jpg",
+        "membershiplevel" : "Bronze"
+        },
+        {
+            "name" : "Nuria Backery",
+            "address" : "Cordoba 1773, Rosario",
+            "phone" : "+341157186363",
+            "website" : "http://www.nuria.com.ar/",
+            "icon" : "images/contact4.jpg",
+            "membershiplevel" : "Golden"
+        },
+        {
+            "name" : "Palacio de la Oportunidad",
+            "address" : "San Luis 999, Rosario",
+            "phone" : "+34115234963",
+            "website" : "https://www.instagram.com/elpalaciodelaoportunidad/",
+            "icon" : "images/contact5.jpg",
+            "membershiplevel" : "Golden"
+        },
+        {
+            "name" : "Coto Supermarket",
+            "address" : "2 de Febrero 1602, Rosario",
+            "phone" : "+3414254913",
+            "website" : "http://www.coto.com.ar/",
+            "icon" : "images/contact6.jpg",
+            "membershiplevel" : "Silver"
+        },
+        {
+            "name" : "Gontocal SRL - Insumos Médicos",
+            "address" : "Italia 2604, Rosario",
+            "phone" : "+3414814426",
+            "website" : "http://www.gontocal.com/",
+            "icon" : "images/contact7.jpg",
+            "membershiplevel" : "Bronze"
+        },
+        {
+            "name" : "Tapiceria DR S.A.",
+            "address" : "Riobamba 3322, Rosario",
+            "phone" : "+3414321050",
+            "website" : "http://www.drsa.com.ar/",
+            "icon" : "images/contact8.jpg",
+            "membershiplevel" : "Silver"
+        },
+        {
+            "name" : "Pescaderia Mar Azul",
+            "address" : "Constitucion 3697, Rosario",
+            "phone" : "+3414381400",
+            "website" : "http://www.pescaderiamarazul.com.ar/",
+            "icon" : "images/contact9.jpg",
+            "membershiplevel" : "Golden Membership"
+        }
+    ]
+}

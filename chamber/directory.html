@@ -5,10 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ailen Mansilla">
-  <meta name="description" content="Local business organizations that are located in the area">
-    <title>Directory</title>
+    <meta name="description" content="Rosario chamber of commerce, directory of contacts">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA8vLyADQ0NAD7+/sAGxsbACQkJAACAgIANjY2APT09AD9/f0AlJOSAB0dHQAEBAQADQ0NAP///wBBQUEAKCgoADExMQA6OjoA+Pj4AENDQwAYGBgATExMACoqKgBFRUUAGhoaACMjIwAsLCwAAQEBADU1NQD8/PwAExMTAEdHRwBQUFAALi4uAOzs7AADAwMA9fX1AP7+/gAnJycAOTk5ABcXFwAgICAAKSkpAPn5+QDg4OAAIiIiACsrKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4ODh4AFBwcEgAODg4ODg4ODgAcAAAAAAAAAAAODg4ODgAAAAAJDg4JAAAAAA4ODgAAHCYODg4ODg4OHAAADg4pHAkmAAAODgAADiYAJA4AGgQODgAADg4MAA4OCgAAKxslDg4AACYmAAAODgEAJBIHDg4OAAAAAAAJDg4JAAAYDw4ODhoAJhMcBg4ODgAALhYjDg4vGg4ODQAODi0AKgAAIQ4OHSIoGRwAJg4AAAAOAAAOJhcCERAfHg4IAAYODgAAAA4ODg4ODg4sFRUADg4OAAAAIAMODgMnBQsADg4ODg4AAAAAAAAAABoADg4ODg4ODg4AAAAAAAAODg4ODgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Directory - Rosario Chamber of Commerce</title>
 </head>
 <body>
+    <header>
+        <picture>
+            <source media="(min-width:800px)" srcset="images/logo-webp.webp">
+            <img class="logo" src="images/logo-webp-small.webp" alt="rosario chamber of commerce">
+        </picture>
+        <h1 id="title">Rosario Chamber of Commerce</h1>
+        <div id="social-media-links">
+            <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
+            <a class="social-media" href="http://www.linkedin.com" target="_blank"><img class="social-media" src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        <nav>
+            <ul class="navigation" id="primary-nav">
+                <li id="hamburger-button">&#9776;</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </nav>
+        <span id="current-date"></span>
+    </header>
+
+    <main id="directory-main">
+      <div id="view-options">
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
+      </div>
+      <div class="directory-contacts">
+
+      </div>
+    </main>
     
+    <footer>
+        <picture>
+            <source media="(min-width:800px)" srcset="images/logo-webp.webp">
+            <img class="logo" src="images/logo-webp-small.webp" alt="rosario chamber of commerce">
+        </picture>
+        <h2>Rosario Chamber of Commerce</h2>
+        <h3>Rosario, Argentina</h3>
+        <p>Telephone: +549638386489
+        <br>Email: rosario@chamberofcommerce.com
+        <br><a href="https://goo.gl/maps/45rVV2q2PfwgyhA9A">Location Map</a>
+        </p>
+        <div id="information">
+        <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce | <strong>Ailen Rocio Mansilla</strong>
+        | WDD 230 Project |Last Modification: <span id="updated"></span>
+        </p> 
+        </div>
+    </footer>
+    <script src="js/chamber.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
