@@ -10,7 +10,7 @@
         display:grid;
         grid-template-columns: 15% 70% 15%;
         width: 100%;
-        grid-gap: 0.5 em;
+        grid-gap: 0.5em;
         align-items: center;
         justify-content: center;
         background-color: #E5989B;
@@ -31,7 +31,7 @@
     #title{
         grid-column: 2/3;
         font-size: 28px;
-        text-align: ceter;
+        text-align: center;
     }
 
     #social-media-links{
