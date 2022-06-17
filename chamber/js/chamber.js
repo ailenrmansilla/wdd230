@@ -54,7 +54,7 @@ function preloadImage(image) {
 
 const imageOptions = {
     threshold: 1,
-    rootMargin: "0px 0px 500px 0px"
+    rootMargin: "0px 0px 50px 0px"
 };
 
 const imageObserver = new IntersectionObserver((entries,imageObserver) =>{
@@ -74,13 +74,15 @@ imagesToLoad.forEach(image =>{
 // local storage
 
 // initialize display elements
-const visitsDisplay = document.querySelector("#visits");
+const visitsDisplay = document.querySelector("#visited-times");
 
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
 
 // increment the number of visits.
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+visitsDisplay.textContent = numVisits;
 

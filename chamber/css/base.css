@@ -149,8 +149,6 @@ footer{
     background-color:#B5838D;
     color:#f0d6d6;
     text-align: center;
-    
-
 }
 
 #welcome{
@@ -166,8 +164,8 @@ footer{
 button{
     position: absolute;
     text-align: center;
-    top:80%;
-    left: 10%;
+    top:65%;
+    left: 25%;
     background-color:#B5838D;
     border-radius: 20px 20px 20px 20px;
     padding: 10px;
@@ -204,10 +202,16 @@ button{
     font-size: 24px;
 }
 #join{
-    text-align: center;
     position: relative;
     margin-top:10px;
     display:none;
+}
+#join p{
+    margin-top: 30%;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.3em;
+    text-shadow: 2px 1px #555;
 }
 
 #join button{
@@ -255,14 +259,15 @@ button{
 }
 .spotlights{
     margin: 10px 10px 10px 10px;
-    background-color:#E5989B;
+    background-color:#f0d6d6;
     border: 1px solid #333;
     height: 280px;
     width: auto;
 }
 .spotlights p{
-    color:#f0d6d6;
-    font-size: 20px;
+    color:#333;
+    text-shadow: 1px 2px #f0d6d6;
+    font-size: 16px;
 }
 
 #spotlight-3{
@@ -272,9 +277,7 @@ button{
 #rosario-title{
     text-align: center;
 }
-picture img{
-    border: 1px solid #333;
-}
+
 #pictures-rosario{
     display:flex;
     flex-flow: column;

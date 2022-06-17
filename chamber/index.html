@@ -22,7 +22,10 @@ BOM file -->
 </head>
 <body>
     <header>
-        <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
+        <picture>
+            <source media="(min-width:800px)" srcset="images/logo-webp.webp">
+            <img class="logo" src="images/logo-webp-small.webp" alt="rosario chamber of commerce">
+        </picture>
         <h1 id="title">Rosario Chamber of Commerce</h1>
         <div id="social-media-links">
             <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
@@ -47,29 +50,32 @@ BOM file -->
         </div>
         <div id="call-to-action">
             <picture id="hero-call-to-action">
-                <source media="(min-width:500px)" srcset="images/medium.jpg">
-                <source media="(min-width:800px)" srcset="images/large.jpg">
-                <img src="images/small.jpg" alt="chamber of commerce">
+                <source media="(min-width:800px)" srcset="images/chamber-commercex800.jpg">
+                <source media="(min-width:500px)" srcset="images/chamber-commercex500.jpg">
+                <img src="images/chamber-commercex200.jpg" alt="chamber of commerce">
             </picture>
 
             <p id="welcome"><strong>Welcome to Rosario Chamber of Commerce</strong></p>
-            <button id="join-button" type="button">Join the Chamber</button>
+            <a href="./join.html"><button id="join-button" type="button">Join the Chamber</button></a>
         </div>
         <div id="join">
-            <button id="join-chamber" type="button">Join the Chamber</button>
+            <a href="./join.html"><button id="join-chamber" type="button">Join the Chamber</button></a>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div id="event">
             <picture>
-                <source media="(max-width:200px)" srcset="images/event-small.jpg"> 
-                <source media="(max-width:500px)" srcset="images/event-medium.jpg">
-                <source media="(max-width:800px)" srcset="images/event-large.jpg">
-                <img src="images/event.jpg" alt="event" width="300">
+                <source media="(min-width:800px)" srcset="images/event-large.jpg">
+                <source media="(min-width:500px)" srcset="images/event-medium.jpg"> 
+                <img src="images/event-small.jpg" alt="event" width="300">
             </picture>
         </div>
         <div id="weather">
             <h3>Weather</h3>
-            <img src="images/weather.png" height="60" alt="weather-image">
+            <picture>
+                <source media="(min-width:500px)" srcset="images/weather-large.png">
+                <img src="images/weather-small.png" alt="weather-image">
+            </picture>
+            
             <p><span id='temperature'>34</span>°F     Partly Cloudy</p>
             <hr>
             <p>Wind speed:<span id='windspeed'>6</span>mph</p>
@@ -77,22 +83,33 @@ BOM file -->
         </div>
         <div id="news-release">
             <picture id="news-release-picture">
-                <source media="(max-width:200px)" srcset="images/news-release-small.jpg"> 
-                <source media="(max-width:500px)" srcset="images/news-release-medium.jpg">
-                <source media="(max-width:800px)" srcset="images/news-release-large.jpg">
-                <img src="images/news-release-large.jpg" alt="news release">
+                <source media="(min-width:800px)" srcset="images/news-release-large.jpg">
+                <source media="(min-width:500px)" srcset="images/news-release-medium.jpg"> 
+                <img src="images/news-release-small.jpg" alt="news release">
             </picture>
             <p>News Release</p>
         </div>
         <div id="spotlight">
-            <div class="spotlights" id="spotlight-1"><p>We are always in contact<br>Send us your inquiry</p></div>
-            <div class="spotlights" id="spotlight-2"><p>Trade list:<br>list of verified commercial and institutional contacts</p></div>
-            <div class="spotlights" id="spotlight-3"><p>Advice for the virtual conversion of your company</p></div>
+            <div class="spotlights" id="spotlight-1">
+               <img src="images/spotlight-1.jpg" alt="spotlight: Send us your inquiry">
+               
+            </div>
+            <div class="spotlights" id="spotlight-2">
+                <img src="images/spotlight-2.png" alt="spotlight: List of verified commercial contacts">
+                
+            </div>
+            <div class="spotlights" id="spotlight-3">
+                <img src="images/spotlight-3.png" alt="spotlight: Advice for the virtual conversion of your company">
+                
+            </div>
         </div>
     </main>
     
     <footer>
-        <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
+        <picture>
+            <source media="(min-width:800px)" srcset="images/logo-webp.webp">
+            <img class="logo" src="images/logo-webp-small.webp" alt="rosario chamber of commerce">
+        </picture>
         <h2>Rosario Chamber of Commerce</h2>
         <h3>Rosario, Argentina</h3>
         <p>Telephone: +549638386489

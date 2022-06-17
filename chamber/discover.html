@@ -16,12 +16,15 @@
 </head>
 <body>
   <header>
-      <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
+    <picture>
+      <source media="(min-width:800px)" srcset="images/logo-webp.webp">
+      <img class="logo" src="images/logo-webp-small.webp" alt="rosario chamber of commerce">
+    </picture>
       <h1 id="title">Rosario Chamber of Commerce</h1>
       <nav>
         <ul class="navigation" id="primary-nav">
             <li id="hamburger-button">&#9776;</li> 
-            <li><a href="#">Home</a></li>  
+            <li><a href="./index.html">Home</a></li>  
             <!-- class="active" -->
             <li><a href="#">Products</a></li>
             <li><a href="#">Location</a></li>
@@ -38,25 +41,25 @@
       <h1 id="rosario-title">Rosario City, Argentina</h1>
       <div id="picture-1">
       <picture>
-          <img src="https://via.placeholder.com/1280x720" data-src='images/rosario1.jpg' alt="Rosario city">
+          <img src="https://via.placeholder.com/1000x563" data-src='images/rosario1.jpg' alt="Rosario city">
       </picture>
       <p>The city of Rosario, in the Santa Fe province, counts with more than 1.5 million of people. It's placed next to the Parana river.</p>
       </div>
       <div id="picture-2">
       <picture>
-          <img src="https://via.placeholder.com/1024x768" data-src='images/rosario2.jpg' alt="Rosario city">
+          <img src="https://via.placeholder.com/1000x750" data-src='images/rosario2.jpg' alt="Rosario city">
       </picture>
       <p>Between its many attractions, we find the "Monument to the flag", represented by the building of a ship bringing the flame of liberty and the flag of Argentina in it.</p>
       </div>
       <div id="picture-3">
       <picture>
-          <img src="https://via.placeholder.com/1200x900" data-src='images/rosario3.jpg' alt="Rosario city">
+          <img src="https://via.placeholder.com/1000x646" data-src='images/rosario3.jpg' alt="Rosario city">
       </picture>
       <p>A distinctive view of the city are the strees full of palms and other trees.</p>
       </div>
       <div id="picture-4">
       <picture>
-          <img src="https://via.placeholder.com/1280x719" data-src='images/rosario4.jpg' alt="Rosario city">
+          <img src="https://via.placeholder.com/1000x562" data-src='images/rosario4.jpg' alt="Rosario city">
       </picture>
       <p>The city is in front of the river and the islands of the neighbor province, and surrounded by the soya fields.<br>People favorite place always will be the shore walk. There you can see the beautiful of the city and feel the peace of the river.</p>
       </div>
@@ -66,10 +69,16 @@
       </picture>
       <p>Come visit us soon!</p>
       </div>
+      <div id="visits">
+        <p>You have visited this page:<span id="visited-times"></span> times</p>
+      </div>
   </div>
   
   <footer>
-    <img class="logo" src="images/logo-webp.webp" alt="rosario chamber of commerce">
+    <picture>
+      <source media="(min-width:800px)" srcset="images/logo-webp.webp">
+      <img class="logo" src="images/logo-webp-small.webp" alt="rosario chamber of commerce">
+  </picture>
     <h2>Rosario Chamber of Commerce</h2>
     <h3>Rosario, Argentina</h3>
     <p>Telephone: +549638386489
