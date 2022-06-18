@@ -29,7 +29,9 @@ const today = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(today);
 console.log(fulldate);
 document.getElementById("current-date").textContent = fulldate;
-document.getElementById("date").value = fulldate;
+
+document.querySelector('#date').value = fulldate.toString();
+
 const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
 document.getElementById("time").value = time;
 
@@ -88,7 +90,7 @@ visitsDisplay.textContent = numVisits;
 
 //json and fecth api code and buttons event listeners
 const url = "https://ailenrmansilla.github.io/wdd230/chamber/json/data.json"
-const contacts = document.querySelector('.directory-contacts');
+const contactsDirectory = document.querySelector('.directory-contacts');
 
 fetch(url)
 .then(function(response){
@@ -118,7 +120,7 @@ function displayDirectory(contact){
     address.textContent = contact.address;
     phone.textContent = contact.phone;
     website.textContent = contact.website;
-    membership_level = contact.membershiplevel;
+    membership_level.textContent = `${contact.membershiplevel} member`;
 
     card.appendChild(name);
     card.appendChild(picture);
@@ -127,12 +129,12 @@ function displayDirectory(contact){
     card.appendChild(address);
     card.appendChild(membership_level);
     
-    document.querySelector('div.directory-contacts').appendChild(card);
+    contactsDirectory.appendChild(card);
 }
 // depending on what view they choose
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("div.directory-contacts");
+const display = document.querySelector(".directory-contacts");
 
 gridbutton.addEventListener("click", () => {
 	display.classList.add("grid");
