@@ -12,7 +12,7 @@
         "name" : "FarmaVip",
         "address" : "Cordoba 2394, Rosario",
         "phone" : "+3412083990",
-        "website" : "farmavip.com.ar",
+        "website" : "http://www.farmavip.com.ar",
         "icon" : "images/contact2.jpg",
         "membershiplevel" : "Silver"
         },
@@ -70,7 +70,7 @@
             "phone" : "+3414381400",
             "website" : "http://www.pescaderiamarazul.com.ar/",
             "icon" : "images/contact9.jpg",
-            "membershiplevel" : "Golden Membership"
+            "membershiplevel" : "Golden"
         }
     ]
 }

@@ -51,7 +51,7 @@
             <legend>Applicant information</legend>
             <label class="top">First Name*<input type="text" name="fname" required></label>
             <label class="top">Last Name*<input type="text" name="lname" required></label>
-            <label class="top">Business Position/Title<input type="text" name="bposition" minlength="7" placeholder="Sales manager"></label>
+            <label class="top">Business Position/Title<input type="text" name="bposition" minlength="7" pattern="[A-Za-z\-\s]{7}" placeholder="Sales manager"></label>
             <label class="top">Email*<input type="email" name="email" placeholder="example@gmail.com" required></label>
             <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" required></label>
             <label class="top">Business Name/Title*<input type="text" name="bname" placeholder="Business Name/Title" required></label>
@@ -87,8 +87,7 @@
         <br><a href="https://goo.gl/maps/45rVV2q2PfwgyhA9A">Location Map</a>
         </p>
         <div id="information">
-        <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce | <strong>Ailen Rocio Mansilla</strong>
-        | WDD 230 Project |Last Modification: <span id="updated"></span>
+        <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce | <strong>Ailen Rocio Mansilla</strong>| WDD 230 Project |Last Modification: <span id="updated"></span>
         </p> 
         </div>
     </footer>

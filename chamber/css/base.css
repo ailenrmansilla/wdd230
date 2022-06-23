@@ -161,17 +161,6 @@ footer{
 
 }
 
-button{
-    position: absolute;
-    text-align: center;
-    top:65%;
-    left: 25%;
-    background-color:#B5838D;
-    border-radius: 20px 20px 20px 20px;
-    padding: 10px;
-    color:#f0d6d6;
-}
-
 #event{
     text-align: center;
     margin-top:10px;
@@ -187,7 +176,7 @@ button{
     margin-top:10px;
     text-align: center;
     background-color:#1f567c;
-    border: 1px solid #333;
+    border: 1px solid #123148;
     height: 300px;
     width:100%;
 }
@@ -214,25 +203,29 @@ button{
     text-shadow: 2px 1px #555;
 }
 
-#join button{
-    display:none;
-
-}
-#join button:hover{
+#join-chamber:hover{
     background-color: #FFB4A2;
     color:#eee;
 }
-
+#join-button{
+    position: absolute;
+    text-align: center;
+    top:65%;
+    left: 25%;
+    background-color: #E5989B;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    color:#f0d6d6;
+}
 #join-button:hover{
     background-color: #FFB4A2;
     color:#eee;
-    
 }
+
 #news-release{
     position:relative;
     margin-top:10px;
     background-color:#333;
-    border: 1px solid #333;
     width:100%;
     align-items: center;
 }
@@ -260,7 +253,6 @@ button{
 .spotlights{
     margin: 10px 10px 10px 10px;
     background-color:#f0d6d6;
-    border: 1px solid #333;
     height: 280px;
     width: auto;
 }
@@ -284,9 +276,13 @@ button{
     padding: 1em;
     margin: auto;
     width: 1200px;
+    box-shadow: none;
 }
 #pictures-rosario img:hover{
     border-radius: 5px 150px;
+}
+#pictures-rosario > div{
+ box-shadow: none;
 }
 #main-form{
     margin: auto;
@@ -363,12 +359,28 @@ form label.top input:required:valid{
 #directory-main{
     margin: auto;
 }
+#view-options-directory{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    box-shadow: none;
+}
+#view-options-directory button{
+    background-color: #E5989B;
+    color:#f0d6d6;
+    border: 1px solid #B5838D;
+    padding: 0.5em;
+}
+#view-options-directory button:hover{
+    background-color: #B5838D;
+}
+
 .directory-contacts{
     background-color: #FFB4A2;
-    width: 70%;
     box-shadow: 0 0 15px rgb(96, 95, 95);
 }
 .directory-contacts section{
+    justify-content: center;
     margin: 0.25rem;
     padding: 0.35rem;
     background-color: #f0d6d6;
@@ -381,9 +393,16 @@ form label.top input:required:valid{
     color: #333;
     text-align: center;
 }
+.directory-contacts section a{
+    color: #333;
+    text-align: center;
+}
+.directory-contacts section a:hover{
+    color: #B5838D;
+}
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	align-items: center;
 }
 .grid img{
@@ -411,4 +430,7 @@ form label.top input:required:valid{
 .directory-contacts a:hover{
     color:#e56370;
 }
-
+#visits {
+    box-shadow: none;
+    text-align: center;
+}
