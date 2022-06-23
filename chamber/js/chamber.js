@@ -30,10 +30,10 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 console.log(fulldate);
 document.getElementById("current-date").textContent = fulldate;
 
-document.querySelector('#date').value = fulldate.toString();
-
+//for the join.html page
 const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-document.getElementById("time").value = time;
+document.querySelector("#time").value = time;
+document.querySelector('#date').value = fulldate.toString();
 
 //banner on mondays and tuesdays
 const today_day = today.getDate();
@@ -86,7 +86,7 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
-visitsDisplay.textContent = numVisits;
+document.querySelector("#visited-times").textContent = numVisits;
 
 //json and fecth api code and buttons event listeners
 const url = "https://ailenrmansilla.github.io/wdd230/chamber/json/data.json"
@@ -103,6 +103,7 @@ fetch(url)
 })
 
 function displayDirectory(contact){
+    console.log(contact);
     let card = document.createElement('section');
     let name = document.createElement('h2');
     let picture = document.createElement('img');
