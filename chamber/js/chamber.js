@@ -81,11 +81,12 @@ let lastVisit = Number(window.localStorage.getItem("lastDayVisited"));
 let timeSinceVisited = today - lastVisit;
 console.log(timeSinceVisited);
 // we calculate how many days ago they visited the page
-const daysSince = Math.round((timeSinceVisited/60000)/1440);
+const daysSince = Math.round(timeSinceVisited/86400000);
 // set the value in localStorage
 localStorage.setItem("lastDayVisited", today);
 // display the days since last visit
 document.getElementById('daysSinceLastVisit').textContent = `You visited this page ${daysSince} days ago.`
+
 // let numVisits = Number(window.localStorage.getItem("visits-ls"));
 // // increment the number of visits.
 // numVisits++;
