@@ -76,25 +76,18 @@ imagesToLoad.forEach(image =>{
 
 // local storage
 
-let lastVisit = Number(window.localStorage.getItem("lastDayVisited"));
+let lastVisit = window.localStorage.getItem("lastDayVisited");
 //we get the miliseconds since last visit
 let timeSinceVisited = today - lastVisit;
 console.log(timeSinceVisited);
 // we calculate how many days ago they visited the page
-const daysSince = Math.round(timeSinceVisited/86400000);
+const daysSince = (Number(timeSinceVisited)/86400000);
 // set the value in localStorage
 localStorage.setItem("lastDayVisited", today);
 // display the days since last visit
 document.getElementById('daysSinceLastVisit').textContent = `You visited this page ${daysSince} days ago.`
 
-// let numVisits = Number(window.localStorage.getItem("visits-ls"));
-// // increment the number of visits.
-// numVisits++;
-// // store the new number of visits value
-// localStorage.setItem("visits-ls", numVisits);
-// // initialize display elements
-// const visitsDisplay = document.querySelector("#your-visits");
-// visitsDisplay.textContent = `You visited this site ${numVisits} times`;
+// I moved it to another js file to avoid erros
 
 // //json and fecth api code and buttons event listeners
 // const url = "https://ailenrmansilla.github.io/wdd230/chamber/json/data.json";
