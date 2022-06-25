@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(28, 46, 91);
+}
+main{
+    max-width: 300px;
+    margin: auto;
+    background-color: rgb(138, 153, 194);
+}
+h1,h2,p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:rgb(31, 31, 31);
+}
+h1{
+    font-size: 16px;
+}
+h2{
+    font-size: 14px;
+}
+p{
+    font-size: 12px;
+}
+img{
+    width: 40px;
+    max-width: 150px;
+}
+figure{
+    align-content: center;
+    display:flex;
+    flex-flow: column;
+}
