@@ -66,14 +66,12 @@
         <div id="weather">
             <h3>Weather</h3>
             <picture>
-                <source media="(min-width:500px)" srcset="images/weather-large.png">
-                <img src="images/weather-small.png" alt="weather-image">
+                <img id="weather-icon" src="" alt="">
             </picture>
-            
-            <p><span id='temperature'>34</span>°F     Partly Cloudy</p>
+            <p><span id='temperature'></span> °F   <span id="w-description"></span></p>
             <hr>
-            <p>Wind speed:<span id='windspeed'>6</span>mph</p>
-            <p>Windchill: <span id='windchill'>N/A</span></p>
+            <p>Wind speed: <span id='windspeed'></span></p>
+            <p>Windchill: <span id='windchill'></span></p>
         </div>
         <div id="news-release">
             <picture id="news-release-picture">
@@ -114,6 +112,7 @@
         <p> &copy; <span id="current-year"></span> Rosario Chamber of Commerce | <strong>Ailen Rocio Mansilla</strong>
         | WDD 230 Project |Last Modification: <span id="updated"></span>
         </p> 
+        <p>Weather provided by <a id="attribution-weatherapi">https://openweathermap.org/</a></p>
         </div>
     </footer>
     <script src="js/chamber.js"></script>
