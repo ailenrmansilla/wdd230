@@ -32,9 +32,7 @@ document.getElementById("current-date").textContent = fulldate;
 
 //for the join.html page
 
-// const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-// document.querySelector("#time").value = time;
-// document.querySelector('#date').value = fulldate.toString();
+document.querySelector('#date').value = today;
 
 //banner on mondays and tuesdays
 const today_day = today.getDate();
