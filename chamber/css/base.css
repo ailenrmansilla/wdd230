@@ -358,6 +358,7 @@ form label.top input:required:valid{
 
 #directory-main{
     margin: auto;
+    max-width: 1200px;
 }
 #view-options-directory{
     text-align: center;
@@ -393,12 +394,11 @@ form label.top input:required:valid{
 .directory-contacts section p{
     color: #333;
     text-align: center;
-    overflow-wrap: break-word;
+    
 }
 .directory-contacts section a{
     color: #333;
     text-align: center;
-    overflow-wrap: break-word;
 }
 .directory-contacts section a:hover{
     color: #B5838D;
@@ -415,6 +415,15 @@ form label.top input:required:valid{
 .list {
 	display: flex;
 	flex-direction: column;
+}
+div.list > section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section > h2,p,a{
+    font-size: 14px;
+    text-align: center;
+    overflow-wrap: break-word;
 }
 .list img{
 	display:none; 

@@ -41,6 +41,7 @@ function displayDirectory(contact){
     card.appendChild(membership_level);
     
     contactsDirectory.appendChild(card);
+    contactsDirectory.classList.add("grid");
 }
 // depending on what view they choose
 const gridbutton = document.querySelector("#grid");

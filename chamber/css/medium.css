@@ -93,4 +93,12 @@
     #pictures-rosario img:hover{
         border-radius: 5px 150px;
     }
+    div.list > section{
+        display: grid;
+        grid-template-columns:  40% 20% 40%;
+    }
+    section > h2,p,a{
+        font-size: 22px;
+        text-align: center;
+    }
 }

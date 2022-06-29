@@ -162,4 +162,13 @@
     #memberhsips-info{
         max-width: 500px;
     }
+    div.list > section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 1.5em;
+    }
+    section > h2,p,a{
+        font-size: 27px;
+        text-align: center;
+    }
 }
