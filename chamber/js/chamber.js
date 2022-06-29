@@ -32,7 +32,7 @@ document.getElementById("current-date").textContent = fulldate;
 
 //for the join.html page
 
-document.querySelector('#date').value = today;
+// document.querySelector('#date').value = today.toString();
 
 //banner on mondays and tuesdays
 const today_day = today.getDate();
@@ -72,7 +72,7 @@ imagesToLoad.forEach(image =>{
     imageObserver.observe(image);
 });
 
-// local storage FIX 
+// local storage 
 
 let lastVisit = window.localStorage.getItem("lastDayVisited");
 //we get the miliseconds since last visit
@@ -83,7 +83,7 @@ const daysSince = Math.round(timeSinceVisited/86400000);
 // set the value in localStorage
 localStorage.setItem("lastDayVisited", today.getTime());
 // display the days since last visit
-document.getElementById('daysSinceLastVisit').textContent = `You visited this page ${daysSince} days ago.`
+document.querySelector('#daysSinceLastVisit').textContent = `You visited this page ${daysSince} days ago.`;
 
 // I moved the fetch for directory it to another js file to avoid erros
 
