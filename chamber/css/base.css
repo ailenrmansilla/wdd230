@@ -441,3 +441,19 @@ section > h2,p,a{
     box-shadow: none;
     text-align: center;
 }
+#wireframes{
+    max-width: 900px;
+    margin: auto;
+    background-color: #FFB4A2;
+    padding: 1.5em;
+}
+#wireframes div{
+    display: flex;
+    flex-flow: column;
+    background-color: #E5989B;
+    padding: 1.5em;
+}
+#wireframes image{
+    max-width: 250px;
+}
+
