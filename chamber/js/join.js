@@ -32,10 +32,3 @@ window.onresize = () => {if(window.innerWidth>992){
 }
 };
 
-//banner on mondays and tuesdays
-const today_day = today.getDate();
-if (today_day == 1 || today_day ==2){
-    document.getElementById("banner").style.display = "block";
-}
-
-
