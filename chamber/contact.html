@@ -28,75 +28,48 @@
         <nav>
             <ul class="navigation" id="primary-nav">
                 <li id="hamburger-button">&#9776;</li>
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="https://ailenrmansilla.github.io/wdd230/chamber/directory.html">Products</a></li>
                 <li><a href="https://ailenrmansilla.github.io/wdd230/chamber/discover.html">Location</a></li>
-                <li><a href="https://ailenrmansilla.github.io/wdd230/chamber/contact.html">Contact</a></li>         
+                <li class="active"><a href="#">Contact</a></li>         
             </ul>
         </nav>
 
         <span id="current-date"></span>
     </header>
-
-    <main id="index-main">
-        <div id="banner">
-            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    <main id="contact-main">
+        <div id="form-contact">
+            <form method="get" action="submitted.html">
+                <fieldset>
+                    <legend>Get in touch</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label class="top">Phone<input type="tel" name="phone" placeholder="123456789"></label>
+                    <label class="top">Are you a Chamber member?
+                        <select name="membership">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="notSure">Not sure</option>
+                        </select>
+                    </label>
+                    <label class="top" for="comment">Comments/Questions*
+                    <textarea id="description" name="comment">
+                    </textarea></label>
+                </fieldset>
+                <input type="submit" class="submit" value="Contact Us">
+              </form>
         </div>
-        <div id="call-to-action">
-            <picture id="hero-call-to-action">
-                <source media="(min-width:800px)" srcset="images/chamber-commercex800.jpg">
-                <source media="(min-width:500px)" srcset="images/chamber-commercex500.jpg">
-                <img src="images/chamber-commercex200.jpg" alt="chamber of commerce">
-            </picture>
-
-            <p id="welcome"><strong>Welcome to Rosario Chamber of Commerce</strong></p>
-            <a id="join-button"  href="./join.html">Join the Chamber</a>
-        </div>
-        <div id="join">
-            <a id="join-chamber" href="./join.html">Join the Chamber</a>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-        </div>
-        <div id="event">
-            <picture>
-                <source media="(min-width:800px)" srcset="images/event-large.jpg">
-                <source media="(min-width:500px)" srcset="images/event-medium.jpg"> 
-                <img src="images/event-small.jpg" alt="event" width="300">
-            </picture>
-        </div>
-        <div id="weather">
-            <h3>Weather</h3>
-            <picture>
-                <img id="weather-icon" src="" alt="">
-            </picture>
-            <p><span id='temperature'></span> °F   <span id="w-description"></span></p>
-            <hr>
-            <p>Wind speed: <span id='windspeed'></span> mph</p>
-            <p>Windchill: <span id='windchill'></span></p>
-        </div>
-        <div id="news-release">
-            <picture id="news-release-picture">
-                <source media="(min-width:800px)" srcset="images/news-release-large.jpg">
-                <source media="(min-width:500px)" srcset="images/news-release-medium.jpg"> 
-                <img src="images/news-release-small.jpg" alt="news release">
-            </picture>
-            <p>News Release</p>
-        </div>
-        <div id="spotlight">
-            <div class="spotlights" id="spotlight-1">
-               <img src="images/spotlight-1.jpg" alt="spotlight: Send us your inquiry">
-               
-            </div>
-            <div class="spotlights" id="spotlight-2">
-                <img src="images/spotlight-2.png" alt="spotlight: List of verified commercial contacts">
-                
-            </div>
-            <div class="spotlights" id="spotlight-3">
-                <img src="images/spotlight-3.png" alt="spotlight: Advice for the virtual conversion of your company">
-                
-            </div>
+        <div id="how-to-contact-us">
+            <h1 id="visit-us">Visit Us</h1>
+            <p>Rosario Chamber of Commerce
+            <br>Cordoba 1402, Rosario 2000
+            <br>Email: rosario@chamberofcommerce.com
+            <br>Tel: +549638386489<br>
+            <br>Monday to Thursday: 9:00 a.m. to 3:30 p.m.<br>Friday: By Appointment Only</p>
         </div>
     </main>
-    
     <footer>
         <picture>
             <source media="(min-width:800px)" srcset="images/logo-webp.webp">
@@ -114,7 +87,6 @@
         </p> 
         </div>
     </footer>
-    <script src="js/chamber.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

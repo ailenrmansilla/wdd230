@@ -171,4 +171,13 @@
         font-size: 23px;
         text-align: center;
     }
+    #contact-main{
+        display: flex;
+        flex-flow: row;
+    }
+    #visit-us{
+        font-size: 27px;
+        text-align: center;
+        
+    }
 }

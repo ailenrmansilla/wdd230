@@ -101,4 +101,11 @@
         font-size: 17px;
         text-align: center;
     }
+    #contact-main{
+        display: flex;
+        flex-flow: column;
+    }
+    #visit-us{
+        font-size: 25px;
+    }
 }
