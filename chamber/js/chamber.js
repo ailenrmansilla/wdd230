@@ -30,9 +30,6 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 console.log(fulldate);
 document.getElementById("current-date").textContent = fulldate;
 
-//for the join.html page
-
-// document.querySelector('#date').value = today.toString();
 
 //banner on mondays and tuesdays
 const today_day = today.getDate();
@@ -40,52 +37,9 @@ if (today_day == 1 || today_day ==2){
     document.getElementById("banner").style.display = "block";
 }
 
-//lazy loading code
-let imagesToLoad = document.querySelectorAll('img[data-src]');
-
-
-function preloadImage(image) {
-    const src = image.getAttribute('data-src');
-    if (!src){
-        return;
-    } 
-    image.src = src;
-    image.removeAttribute("data-src");
-};
-
-const imageOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
-};
-
-const imageObserver = new IntersectionObserver((entries,imageObserver) =>{
-    entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-        return; 
-    } else{
-        preloadImage(entry.target);
-        imageObserver.unobserve(entry.target);
-    }
-})} , imageOptions);
-
-imagesToLoad.forEach(image =>{
-    imageObserver.observe(image);
-});
-
-// local storage 
-
-let lastVisit = window.localStorage.getItem("lastDayVisited");
-//we get the miliseconds since last visit
-let timeSinceVisited = today.getTime() - lastVisit;
-console.log(timeSinceVisited);
-// we calculate how many days ago they visited the page
-const daysSince = Math.round(timeSinceVisited/86400000);
-// set the value in localStorage
-localStorage.setItem("lastDayVisited", today.getTime());
-// display the days since last visit
-document.querySelector('#daysSinceLastVisit').textContent = `You visited this page ${daysSince} days ago.`;
 
 // I moved the fetch for directory it to another js file to avoid erros
+//also the things for the join.html, and discover.html pages
 
 // weather api
 const currentTemp = document.querySelector('#temperature');
