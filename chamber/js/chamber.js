@@ -75,3 +75,56 @@ async function apiWeatherFetch() {
     wind_speed.textContent = wind;
   }
   apiWeatherFetch();
+
+//json file and fecth api code to show the spotlights
+const url_directory = "https://ailenrmansilla.github.io/wdd230/chamber/json/data.json";
+
+
+fetch(url_directory)
+.then(function(response){
+    return response.json();
+})
+.then(function(jsonObject){
+    console.table(jsonObject);
+    const contacts = jsonObject['directory'];
+    contacts.forEach(displaySpotlights);
+})
+
+function displaySpotlights(contact){
+  const spotlight = document.querySelector('#spotlight');
+  if (spotlight.children.length < 3) {
+    if(contact.membershiplevel == "Golden"||contact.membershiplevel == "Silver"){
+      let card = document.createElement('div');
+      let name = document.createElement('p');
+      let picture = document.createElement('img');
+      let address = document.createElement('p');
+      let phone = document.createElement('p');
+      let membership_level = document.createElement('p');
+
+      picture.setAttribute('src', contact.icon);
+      let alt_text = `Icon of ${contact.name} - ${contact.membershiplevel} member of the Chamber`;
+      picture.setAttribute('alt', alt_text);
+      picture.setAttribute('loading','lazy');
+
+      name.textContent = contact.name;
+      address.textContent = contact.address;
+      phone.textContent = contact.phone;
+      membership_level.textContent = `${contact.membershiplevel} member`;
+
+      card.appendChild(name);
+      card.appendChild(picture);
+      card.appendChild(address);
+      card.appendChild(phone);
+      card.appendChild(membership_level);
+      card.classList.add("spotlights");
+      
+      if (spotlight.children.length == 0){
+        card.setAttribute("id","spotlight-1")
+      }else if(spotlight.children.length == 1){
+        card.setAttribute("id","spotlight-2")
+      }else if(spotlight.children.length == 2){
+        card.setAttribute("id","spotlight-3")
+      }
+      spotlight.appendChild(card);
+  }
+}}

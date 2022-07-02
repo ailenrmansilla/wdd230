@@ -254,13 +254,17 @@ footer{
 .spotlights{
     margin: 10px 10px 10px 10px;
     background-color:#f0d6d6;
-    height: 280px;
+    height: 290px;
     width: auto;
 }
 .spotlights p{
     color:#333;
     text-shadow: 1px 2px #f0d6d6;
-    font-size: 16px;
+    line-height: 10px;
+    margin-top: 10px;
+}
+.spotlights img{
+    max-width: 50%;
 }
 
 #spotlight-3{
