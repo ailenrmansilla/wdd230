@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ailen Mansilla">
+    <meta name="description" content="The Temple Inn and Suites. Hotel close to the temple. Suites, specialized services, wedding receptions, youth trips, and services for full-time temple missionaries.">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4AAAd+4AAHfuAAB37gAAd+4AAHAOAAB//gAAf/4AAH/+AABwDgAAd+4AAHfuAAB37gAAd+4AAHfuAAAH4AAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Temple Inn & Suites - Home</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width:800px)" srcset="images/logo-large.jpg">
+            <img class="logo" src="images/logo-small.jpg" alt="hotel temple inn and suites">
+        </picture>
+        <h1 id="title">Temple Inn & Suites</h1>
+        <div id="social-media-links">
+            <a class="social-media" href="http://www.facebook.com" target="_blank"><img class="social-media" src="images/facebook.png" alt="facebook"></a>
+            <a class="social-media" href="http://www.instagram.com" target="_blank"><img class="social-media" src="images/instagram.png" alt="instagram"></a>
+            </div>
+        <nav>
+            <ul class="navigation" id="primary-nav">
+                <li id="hamburger-button">&#9776;</li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Temples</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Wedding Reception</a></li>
+                        <li><a href="#">Full-time Temple Missionaries</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>         
+            </ul>
+        </nav>
+        <!-- <span id="current-date"></span> -->
+    </header>
+    <main id="home-main">
+        <h2 id="title-on-main">Temple Inn & Suites</h2>
+        <div id="call-to-action">
+            <picture id="temple-call-to-action">
+                <source media="(min-width:800px)" srcset="images/inside-hotel-large.jpg">
+                <source media="(min-width:500px)" srcset="images/inside-hotel-medium.jpg">
+                <img src="images/inside-hotel-small.jpg" alt="hotel">
+            </picture>
+            <a id="reservation-button"  href="reservation.html">Make a hotel reservation</a>
+        </div>
+        <div id="temple-info">
+            <picture id="about-temple">
+                <source media="(min-width:800px)" srcset="images/meridian-temple-large.jpg">
+                <source media="(min-width:500px)" srcset="images/meridian-temple-medium.jpg">
+                <img src="images/meridian-temple-small.jpg" alt="Meridian temple">
+            </picture>
+        </div>
+        <div id="about-us">
+            <picture id="about-hotel">
+                <source media="(min-width:800px)" srcset="images/room-large.jpg">
+                <source media="(min-width:500px)" srcset="images/room-medium.jpg">
+                <img src="images/room-small.jpg" alt="Temple Inn hotel">
+            </picture>
+            <!-- display the next things in two sides on the image, background for text if possible. Put the button somewhere in the middle -->
+            <p id="brief-p">The most specialized hotel accommodations near temple locations around the world.</p>
+            <p id="contact-the-hotel">Reach us out today!<br>+19382374929<br>hotel@templeinn.com</p>
+            <!-- <a id="contact-button"  href="contact.html">Contact Us</a> -->
+        </div>
+        <div id="weather">
+            <div id="current-weather">
+            <picture>
+                <img id="weather-icon" src="" alt="">
+            </picture>
+            <p><span id='temperature'></span> °F   <span id="weather-description"></span></p>
+            <p>Wind speed: <span id='windspeed'></span> mph</p>
+            <p>Humidity: <span id='windchill'></span></p>
+            <!-- investigate about the closeable alert -->
+            </div>
+            <div id="weather-alert">
+                <!-- dont display this unless there is an alert -->
+            </div>
+            <div id="three-days-forecast">
+                <!-- include day name and just day temperate -->
+            </div>
+        </div>
+        <div id="services-summary">
+            <p id="we-count-with">We count with</p> 
+            <ul id="temple-services-list">
+                <li>A family search center</li>
+                <li>A wedding reception hall</li>
+                <li>Changing rooms and bathroom facilities for temple patrons</li>
+                <li>Suites for full-time temple missionaries</li>
+                <li>A playroom and low-cost babysitting services</li>
+            </ul>
+            <a id="services-button"  href="services.html">More info</a>
+        </div>
+    </main>
+    <footer>
+        <picture>
+            <source media="(min-width:800px)" srcset="images/logo-large.jpg">
+            <img class="logo" src="images/logo-small.jpg" alt="hotel temple inn and suites">
+        </picture>
+        <h2>Temple Inn & Suites</h2>
+        <p>Telephone: +19382374929
+        <br>Email: hotel@templeinn.com
+        <br><a href="https://goo.gl/maps/wkAHYGvrGRNwxBV99">4800 Montgomery Ln #300, Bethesda, MD 20814</a>
+        </p>
+        <div id="information">
+        <p> &copy; <span id="current-year"></span> Temple Inn & Suites | <strong>Ailen Rocio Mansilla</strong>
+        | WDD 230 Final Project |Last Modification: <span id="updated"></span> | Attributions | Weather provided by <a href="https://openweathermap.org/" id="attribution-weatherapi">https://openweathermap.org/</a>
+        </p> 
+        </div>
+    </footer>
+    <script src="js/hotelhome.js"></script>
+</body>
+</html>
