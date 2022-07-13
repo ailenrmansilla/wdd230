@@ -8,12 +8,18 @@ body{
 }
 h1{
     color: #D4A373;
+    padding: 0.5em;
 }
-h2,li{
+h2{
+    color: #555555;
+    padding: 0.5em;
+}
+li{
     color: #555555;
 }
 h3{
     color: #CCD5AE;
+    padding: 0.5em;
 }
 img{
     max-width: 100%;
