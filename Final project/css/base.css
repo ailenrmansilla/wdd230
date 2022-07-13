@@ -17,10 +17,11 @@ h3{
 }
 img{
     max-width: 100%;
+    height: auto;
 }
 p{  padding: 0.5em;
     color:#333333;
-    font-size:22px;
+    font-size:16px;
 }
 div{
     max-width: 100%;
@@ -31,6 +32,7 @@ div{
 a{  
     text-decoration: none;
     padding: 0.7em;
+    font-weight: bold; 
 }
 a:hover{
     color:#CCD5AE;
@@ -54,12 +56,13 @@ header{
     background-color:#D4A373;
     color:#FAEDCD;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
     padding:0.7em;
 }
 #title{
     font-size: 20px;
     grid-column: 2/3;
+    padding: 10px;
 }
 #social-media-links{
     background-color: #FAEDCD;
@@ -75,35 +78,42 @@ nav{
     grid-column:4/5;
     background-color: #FAEDCD;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 1.2em;
     border: 1px solid #CCD5AE;
+    box-shadow: 1px 3px 3px #D4A373;
 }
 nav ul{
     list-style: none;
     padding: 0;
     margin:0;
 }
+nav >li{
+    float: left;
+    text-align:center;
+}
 nav ul li:first-child {
     display: block;
 }
-nav ul li {
-    display: none;
-}
+
 nav ul a {
     display: block;
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
     color: #555555;
-    font-size: 18px;
+    font-size: 17px;
 }
-nav ul li a:hover {
+nav li a{
+    display: block;
+    text-decoration: none;
+}
+nav ul li>a:hover {
     background-color: #D4A373;
     color: whitesmoke;
 }
 nav ul li.active a{
-    background-color: #B5838D;
-    color: rgb(240, 214, 214);
+    background-color: #CCD5AE;
+    color: #555555;
 }
 nav button{
     margin: .1rem 2vw;
@@ -113,6 +123,26 @@ nav button{
     color: #D4A373;
     border-top: 1px solid #555555;
 }
+
+/* it is not shown until it is hover */
+nav li ul {
+    display:none;
+    min-width:140px;
+    position: absolute;
+}
+nav li:hover > ul {
+    display:block;
+}
+nav li ul li {
+    position:relative;
+    background-color: #FAEDCD;
+    color: #555555;
+}
+nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
 .open{
     display:block;
 }
@@ -125,7 +155,7 @@ nav button{
     justify-content: center;
     flex-direction: column;
     padding: 0.5em;
-    max-width:1100px;
+    max-width:1200px;
     background-color: #FEFAE0;
 }
 footer{
@@ -140,7 +170,7 @@ footer{
     border: 1px solid #333333;
 }
 #weather p{
-    font-size: 14px;
+    font-size: 13px;
 }
 #current-weather{
     display: flex;
@@ -153,12 +183,14 @@ footer{
 #call-to-action{
     position: relative;
 }
+#call-to-action img{
+    width: 100%;}
 #reservation-button{
     position: absolute;
     top: 80%;
     left: 30%;
     text-align: center;
-    padding: 12px;
+    padding: 14px;
     color:#FAEDCD;
     background-color: #D4A373;
     
@@ -187,20 +219,24 @@ footer{
     background-color: #CCD5AE;
 }
 #about-us img{
-    max-width: 100%;
+    width: 100%;
 }
 #contact-the-hotel{
     text-align: right;
 }
 #brief-p{
     position: absolute;
+    line-height: 1.2; 
     top: 5%;
     left: 5%;
     background-color: #FAEDCD;
     color: #D4A373;
-    max-width: 50%;
-    font-size: 17px;
+    width: 200px;
+    font-size: 12px;
+    padding: 0.5em;
+    width: 50%;
 }
+
 #contact-button{
     position: absolute;
     top: 65%;
@@ -222,7 +258,7 @@ footer{
 }
 #services-button{
     position: absolute;
-    top: 80%;
+    top: 86%;
     left: 40%;
     text-align: center;
     padding: 12px;
@@ -234,6 +270,8 @@ footer{
     color:#D4A373;
 }
 #we-count-with{
+    font-size: 17px;
     background-color: #D4A373;
-    color:#FAEDCD
+    color:#FAEDCD;
+    font-weight: bold; 
 }

@@ -1,0 +1,126 @@
+@media only screen and (min-width:992px){
+    body{
+        font-size: 20px;
+    }
+    .logo{
+        max-width: 160px;
+        padding: 0.3em;
+        height: auto;
+        grid-column: 1/2;
+        grid-row:1;
+    }
+    header{
+        display:grid;
+        grid-template-columns: 20% 70% 10%;
+        width: 100%;
+        grid-gap: 0.5em;
+        align-items: center;
+    }
+    nav{
+        grid-column: 1/4;
+        grid-row:2;
+        width:100%;
+    }
+    nav ul{
+        display: flex;
+        margin-right: 1.5em;
+        justify-content: center;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        padding:0.5em;
+        border: none;
+        border-left:1px solid #D4A373;
+    }
+
+    nav ul li a:hover {
+        background-color: #FEFAE0;
+        color:#D4A373;;
+    }
+
+    nav ul li.active a{ /*when we are in the li active class*/
+        background-color: #CCD5AE;
+        color: #555555;
+    }
+    nav ul li.active li>a{
+        background-color: #FAEDCD;
+        color: #555555;
+    }
+    #hamburger-button{
+        display: none;
+    }
+    /* it is not shown until it is hover */
+    nav li ul {
+        display:none;
+        min-width:140px;
+        position: absolute;
+    }
+    nav li:hover > ul {
+        display:block;
+    }
+    nav li ul li {
+        position:relative;
+    }
+    nav li ul li ul {
+        right:-140px;
+        top:0px;
+    }
+    #title{
+        grid-column: 2/3;
+        font-size: 26px;
+        text-align: center;
+    }
+    #social-media-links{
+        grid-column: 3/4;
+    }
+    .social-media{
+        max-width: 60px;
+        height: auto;
+    }
+    #title-on-main{
+        font-size: 25px;
+    }
+    p{  
+        font-size:22px;
+    }
+    #weather p{
+        font-size: 20px;
+    }
+    #brief-p{
+        font-size: 21px;
+        padding: 0.8em;
+        width: 70%;
+    }
+    #home-main{
+        margin: auto;
+        display:grid;
+        grid-template-columns:25% 50% 25%;
+        grid-gap: 5px;
+        padding: 0.5em;
+    }
+    #weather{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #call-to-action{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #temple-info{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #about-us{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    #about-us img{
+        max-width: 100%;
+    }
+    #services-summary{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+}

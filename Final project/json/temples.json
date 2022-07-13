@@ -1,0 +1,54 @@
+{
+    "temples":[
+        {   "city":"",
+            "address":"",
+            "telephone":"",
+            "email":"",
+            "services":"",
+            "history":"",
+            "ordinances-schedule":"",
+            "session-schedule":"",
+            "temple-closure-schedule":""
+        },
+        {   "city":"",
+            "address":"",
+            "telephone":"",
+            "email":"",
+            "services":"",
+            "history":"",
+            "ordinances-schedule":"",
+            "session-schedule":"",
+            "temple-closure-schedule":""
+        },
+        {   "city":"",
+            "address":"",
+            "telephone":"",
+            "email":"",
+            "services":"",
+            "history":"",
+            "ordinances-schedule":"",
+            "session-schedule":"",
+            "temple-closure-schedule":""
+        },
+        {   "city":"",
+            "address":"",
+            "telephone":"",
+            "email":"",
+            "services":"",
+            "history":"",
+            "ordinances-schedule":"",
+            "session-schedule":"",
+            "temple-closure-schedule":""
+        },
+        {   "city":"",
+            "address":"",
+            "telephone":"",
+            "email":"",
+            "services":"",
+            "history":"",
+            "ordinances-schedule":"",
+            "session-schedule":"",
+            "temple-closure-schedule":""
+        }
+    ]
+}
