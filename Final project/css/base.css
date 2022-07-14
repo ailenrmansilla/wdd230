@@ -208,7 +208,6 @@ footer{
 #temple-info{
     position:relative;
     display: flex;
-    flex-flow: column;
     justify-content: center;
 }
 #temple-info p{
@@ -225,7 +224,11 @@ footer{
     background-color: #CCD5AE;
 }
 #about-us img{
-    width: 100%;
+    max-width: 100%;
+}
+
+#about-temple{
+    max-width: 100%;
 }
 #contact-the-hotel{
     text-align: right;
@@ -280,4 +283,72 @@ footer{
     background-color: #D4A373;
     color:#FAEDCD;
     font-weight: bold; 
+}
+#reservation-main{
+    margin: auto;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 700px;
+    background-color: #FAEDCD;
+}
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #D4A373;
+    border-radius: 10px;
+    width: 96%;
+    max-width: 600px; 
+}
+
+form legend{
+    color:#D4A373;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label{
+    display:block;
+    padding-top: 1rem;
+    color:#333333;
+    font-size: .8rem;
+}
+form label input, form #comment{
+    -webkit-appearance: none;
+    display:block;
+    font-size: 18px;
+    border: solid 1px #D4A373;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #333333;
+    width: 95%;
+    max-width: 600px; 
+    background-color: rgba(0,0,0,0.1);
+}
+form input.submit{
+    border: none;
+    background-color:#D4A373;
+    color: #FAEDCD;
+    border-radius: 1rem;
+    padding: .75rem 1.75rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 300px; 
+}
+form label input:required{
+    border-left: red solid 5px;
+}
+form label input:required:valid{
+    border-left: rgb(5, 178, 5) solid 5px;
+}
+#main-submitted{
+    margin: auto;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 700px;
+    background-color: #CCD5AE;
+}
+#main-submitted p{
+    text-align: center;
+}
+#how-to-contact-us{
+    text-align: center;
+    background-color: #D4A373;
 }

@@ -13,7 +13,6 @@
         display:grid;
         grid-template-columns: 20% 70% 10%;
         width: 100%;
-        grid-gap: 0.5em;
         align-items: center;
     }
     nav{
@@ -73,7 +72,10 @@
         text-align: center;
     }
     #social-media-links{
+        background-color: #FAEDCD;
         grid-column: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .social-media{
         max-width: 60px;
@@ -97,7 +99,6 @@
         margin: auto;
         display:grid;
         grid-template-columns:25% 50% 25%;
-        grid-gap: 5px;
         padding: 0.5em;
     }
     #weather{
