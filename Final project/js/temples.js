@@ -65,7 +65,7 @@ function displayTemples(temple){
     address.textContent = temple.address;
     phone.textContent = temple.telephone;
     email.textContent = temple.email;
-    closure_schedule.textContent = temple.closure-schedule;
+    closure_schedule.textContent = temple.closureSchedule;
     services.textContent = temple.services;
     
     
@@ -93,3 +93,8 @@ function displayTemples(temple){
 //     let button_pressed_class = document. getElementsByClassName('liked');
 //     like_button.classList.add('liked');
 //   });
+
+// local storage 
+
+// let lastVisit = window.localStorage.getItem("lastDayVisited");
+// localStorage.setItem("lastDayVisited", today.getTime());
