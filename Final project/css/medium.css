@@ -63,5 +63,43 @@
         top: 84%;
         left: 45%;
     }
+    #see-info-for-temple-missisionaries{
+        position: absolute;
+        top: 52%;
+        left: 42%;
+        text-align: center;
+        padding: 18px;
+        background-color:#D4A373;
+        color: #FAEDCD;
+        max-width: 200px;
+    }
+    #see-info-for-receptions{
+        position: absolute;
+        top: 93%;
+        left: 42%;
+        text-align: center;
+        padding: 18px;
+    }
+    #more-about-suites{
+        font-size: 22px;
+    }
+    #m-contact-us-button{
+        position: absolute;
+        top: 95%;
+        left: 40%;
+        padding: 12px;
+    }
+    #w-contact-us-button{
+        position: absolute;
+        top: 97%;
+        left: 40%;
+        padding: 12px;
+    }
+    #send-contact-us{
+        max-width: 200px;
+        position: absolute;
+        top: 63%;
+        left: 35%;
+    }
     
 }

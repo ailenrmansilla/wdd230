@@ -51,6 +51,7 @@ header{
     grid-gap:0.2em;
     align-items:center;
     background-color: #FAEDCD;
+    padding: 0.3em;
 }
 .logo{
     max-width: 60px;
@@ -80,6 +81,12 @@ header{
     max-width: 30px;
     height: auto;
 }
+.open{
+    display:block;
+}
+.open li{
+    display:block;
+}
 nav{
     grid-column:4/5;
     background-color: #FAEDCD;
@@ -92,6 +99,9 @@ nav ul{
     list-style: none;
     padding: 0;
     margin:0;
+}
+nav ul li {
+    display: none;
 }
 nav >li{
     float: left;
@@ -168,6 +178,9 @@ footer{
     background-color: #D4A373;
     text-align: center;
     width: 100%;
+}
+footer div{
+    background-color: #D4A373;
 }
 #weather{
     height: 250px;
@@ -290,6 +303,7 @@ footer{
     width: 100%;
     max-width: 700px;
     background-color: #FAEDCD;
+    margin-bottom: 50px;
 }
 form fieldset{
     margin: 2rem 0;
@@ -350,5 +364,152 @@ form label input:required:valid{
 }
 #how-to-contact-us{
     text-align: center;
-    background-color: #D4A373;
+    background-color: #CCD5AE;
 }
+#services-main{
+    margin:auto;
+    background-color: #FAEDCD;
+    max-width: 1300px;
+    margin-bottom: 50px;
+}
+#services-main h2{
+    background-color: #D4A373;
+    color:#FAEDCD;
+    text-align: center;
+}
+#services-provided{
+    position: relative;
+}
+#for-temple-missionaries{
+    color: #D4A373;
+    text-align: center;
+    padding: 1.2em;
+}
+#see-info-for-temple-missisionaries{
+    position: absolute;
+    top: 62%;
+    left: 40%;
+    text-align: center;
+    padding: 17px;
+    background-color:#D4A373;
+    color: #FAEDCD;
+    max-width: 220px;
+}
+#for-wedding-receptions{
+    margin-top: 120px;
+    color: #D4A373;
+    text-align: center;
+    padding: 1.2em;
+}
+#see-info-for-receptions{
+    position: absolute;
+    top: 96%;
+    left: 40%;
+    text-align: center;
+    padding: 15px;
+    background-color:#D4A373;
+    color: #FAEDCD;
+    max-width: 200px;
+}
+#amenities-provided{
+    display: flex;
+    flex-flow: column;
+}
+#amenities-provided img{
+    max-width: 100%;
+}
+#amenities-provided ul li{
+    font-size: 18px;
+}
+#services-main{
+    margin: auto;
+    max-width: 1300px; 
+}
+#missionaries-suite{
+    align-items: center;
+    position: relative;
+}
+#missionaries-suite p{
+    font-size: 19px;
+}
+#missionaries-suite img{
+    margin: auto;
+    width: 100%;
+}
+#more-about-suites{
+    text-align: center;
+    color:#D4A373;
+    margin-bottom: 100px;
+    font-size: 19px;}
+#m-contact-us-button{
+    position: absolute;
+    top: 92%;
+    left: 38%;
+    text-align: center;
+    padding: 10px;
+    background-color:#D4A373;
+    color: #FAEDCD;
+}
+#reception-main{
+    margin: auto;
+    max-width: 1300px; 
+}
+#accommodations{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0.7em;
+}
+#accommodations img{
+    width: 100%;
+}
+#reception-accomodations-p{
+    font-size: 20px;
+}
+#food-options-title{
+    background-color: #D4A373;
+    color:#FAEDCD;
+    text-align: center;
+}
+#food-setup-options{
+    position: relative;
+}
+#food-setup-options h3{
+    background-color: #CCD5AE;
+    color:#FAEDCD;
+}
+#more-about-w-receptions{
+    text-align: center;
+    color:#D4A373;
+    margin-bottom: 50px;
+}
+#w-contact-us-button{
+    position: absolute;
+    top: 97%;
+    left: 38%;
+    text-align: center;
+    padding: 10px;
+    background-color:#D4A373;
+    color: #FAEDCD;
+}
+#contact-us-main{
+    margin: auto;
+    max-width: 900px;
+    background-color: #FAEDCD;
+}
+#form-contact fieldset{
+    margin: auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+#form-contact{
+    background-color: #FEFAE0;
+}
+#send-contact-us{
+    max-width: 200px;
+    position: absolute;
+    top: 61%;
+    left: 25%;
+}
+/* YA FUE QUITAR ESOS POSITION ABSOLUTE */

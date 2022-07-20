@@ -72,21 +72,21 @@
         </div>
         <div id="weather">
             <div id="current-weather">
+                <p id="city-name">Weather in Meridian, Idaho</p>
             <picture>
                 <img id="weather-icon" src="" alt="">
             </picture>
-            <p><span id='temperature'></span> °F   <span id="weather-description"></span></p>
-            <p>Wind speed: <span id='windspeed'></span> mph</p>
-            <p>Humidity: <span id='windchill'></span></p>
+            <p><span id='temperature'></span> °F <span id="weather-description"></span></p>
+            <p>Humidity: <span id='humidity'></span>%</p>
             <!-- investigate about the closeable alert -->
             </div>
-            <div id="weather-alert">
-                <!-- dont display this unless there is an alert -->
-            </div>
-            <div id="three-days-forecast">
-                <!-- include day name and just day temperate -->
-            </div>
         </div>
+
+        <div class="closed" id="weather-alert">
+            <p id="x">X</p>
+            <p id="weather-alerts">Alert for <span id="alert-for"></span></p>
+        </div>
+
         <div id="services-summary">
             <p id="we-count-with">We count with</p> 
             <ul id="temple-services-list">
@@ -97,6 +97,14 @@
                 <li>A playroom and low-cost babysitting services</li>
             </ul>
             <a id="services-button"  href="services.html">More info</a>
+        </div>
+        <div id="three-days-forecast">
+            <div id="day-1">  
+            </div>
+            <div id="day-2">
+            </div>
+            <div id="day-3">
+            </div>
         </div>
     </main>
     <footer>

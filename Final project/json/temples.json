@@ -1,6 +1,7 @@
 {
     "temples":[
         {   "city":"Boise Idaho Temple",
+            "picture" : "https://assets.ldscdn.org/29/8b/298bdc171826d2561184579b7f51521f36994836/boise_idaho_temple_sunshine.jpeg",
             "address":"1211 S Cole Rd Boise ID USA",
             "telephone":"(1) 208-322-4422",
             "email":"boise.temple@lds.org",
@@ -8,6 +9,7 @@
             "temple-closure-schedule":"Saturday, 1 October 2022<br>Monday, 10 October 2022 - Monday, 24 October 2022<br>Wednesday, 23 November 2022 (Limited Operations)<br>Thursday, 24 November 2022<br>Saturday, 24 December 2022<br>Saturday, 31 December 2022 (Limited Operations)"
         },
         {   "city":"Bountiful Utah Temple",
+            "picture" : "https://assets.ldscdn.org/69/89/6989b0f5530a6a15a7d50518cf8c51f9e107b8c4/bountiful_temple_lds.jpeg",
             "address":"640 S Bountiful Blvd Bountiful UT USA",
             "telephone":"(1) 801-296-2100",
             "email":"bountiful.temple@lds.org",
@@ -15,6 +17,7 @@
             "temple-closure-schedule":"Saturday, 23 July 2022<br>Monday, 19 September 2022 - Monday, 3 October 2022<br>Wednesday, 23 November 2022 - Thursday, 24 November 2022<br>Friday, 23 December 2022 - Saturday, 24 December 2022<br>Saturday, 31 December 2022"
         },
         {   "city":"Brigham City Utah Temple",
+            "picture" : "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg",
             "address":"250 S Main St Brigham City UT USA",
             "telephone":"(1) 435-695-2170",
             "email":"brigham.city.temple@lds.org",
@@ -22,6 +25,7 @@
             "temple-closure-schedule":"Monday, 8 August 2022 - Monday, 22 August 2022<br>Friday, 9 September 2022 (Limited Operations)<br>Saturday, 10 September 2022<br>Wednesday, 23 November 2022 (Limited Operations)<br>Saturday, 24 December 2022<br>Saturday, 31 December 2022 (Limited Operations)"
         },
         {   "city":"Chicago Illinois Temple",
+            "picture" : "https://assets.ldscdn.org/c6ad76bb441238a309b38ac6d1f698c1d32b504f",
             "address":"4151 W Lake Ave Glenview IL USA",
             "telephone":"(1) 847-299-6500",
             "email":"chicago.temple@lds.org",
@@ -29,6 +33,7 @@
             "temple-closure-schedule":"Monday, 29 August 2022 - Monday, 12 September 2022<br>Wednesday, 23 November 2022 (Limited Operations)<br>Saturday, 24 December 2022<br>Saturday, 31 December 2022"
         },
         {   "city":"Rexburg Idaho Temple",
+            "picture" : "https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
             "address":"750 S 2nd E Rexburg ID USA",
             "telephone":"(1) 208-656-0880",
             "email":"rexburg.temple@lds.org",

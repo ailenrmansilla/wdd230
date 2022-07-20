@@ -124,4 +124,91 @@
         grid-column: 1/4;
         grid-row: 2/3;
     }
+    #see-info-for-temple-missisionaries{
+        position: absolute;
+        top: 57%;
+        left: 45%;
+        text-align: center;
+        padding: 19px;
+    }
+    #see-info-for-receptions{
+        position: absolute;
+        top: 92%;
+        left: 45%;
+        text-align: center;
+        padding: 19px;
+    }
+    #amenities-provided{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #free-ameities-title{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    #list-free-amenities{
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    #amenities{
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    #amenities-provided img{
+        max-width: 100%;
+    }
+    #amenities-provided ul li{
+        font-size: 25px;
+    }
+
+    #missionaries-suite{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        text-align: center;
+    }
+    #missionaries-suite img{
+        margin: auto;
+        max-width: 100%;
+    }
+    #missionaries-suite p{
+        padding: 1em;
+    }
+    #missionaries-suite-bedroom-picture{
+        grid-column: 1/3;
+    }
+    #more-about-suites{
+        grid-column: 1/3;
+        font-size: 27px;
+    }
+    #m-contact-us-button{
+        position: absolute;
+        top: 95%;
+        left: 45%;
+        padding: 18px;
+        font-size: 22px;
+    }
+    #food-setup-options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #food-options-title{
+        grid-column: 1/3;
+    }
+    #more-about-w-receptions{
+        margin-top: 250px;
+        font-size: 27px;
+    }
+    #w-contact-us-button{
+        position: absolute;
+        top: 80%;
+        left: 67%;
+        padding: 20px;
+        max-width: 200px;
+        font-size: 26px;
+    }
+    #send-contact-us{
+        position: absolute;
+        top: 152%;
+        left: 43%;
+    }
 }
