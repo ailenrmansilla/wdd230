@@ -40,8 +40,8 @@ fetch(url)
 })
 .then(function(jsonObject){
     console.table(jsonObject);
-    const temples = jsonObject['temples'];
-    temples.forEach(displayTemples);
+    const temples_return = jsonObject['temples'];
+    temples_return.forEach(displayTemples);
 })
 
 function displayTemples(temple){
@@ -65,8 +65,9 @@ function displayTemples(temple){
     address.textContent = temple.address;
     phone.textContent = temple.telephone;
     email.textContent = temple.email;
+    closure_schedule.textContent = temple.closure-schedule;
     services.textContent = temple.services;
-    closure_schedule.textContent = temple.temple-closure-schedule;
+    
     
     
     like_button.textContent = 'Like ♥';
