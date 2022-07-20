@@ -69,9 +69,8 @@ function displayTemples(temple){
     services.innerHTML = temple.services;
  
     like_button.textContent = 'Like ♥';
-    like_button.classList.add('i-like-it');
     like_button.classList.add('temple-like-button');
-    let id_button = `${city}-like-button`;
+    let id_button = temple.id;
     like_button.setAttribute('id',id_button);
 
 
@@ -88,15 +87,23 @@ function displayTemples(temple){
 
 };
 
-const button_1 = document.getElementById('')
-// const like_button = document.querySelector('#like-button');
-// like_button.addEventListener ("click", function() {
-//     // change background of button
-//     let button_pressed_class = document. getElementsByClassName('liked');
-//     like_button.classList.add('liked');
-//   });
+const button_1 = document.getElementById('temple1');
+button_1.onclick = saveLike('temple1');
+const button_2 = document.getElementById('temple2');
+button_2.onclick = saveLike('temple1');
+const button_3 = document.getElementById('temple3');
+button_3.onclick = saveLike('temple1');
+const button_4 = document.getElementById('temple4');
+button_4.onclick = saveLike('temple1');
+const button_5 = document.getElementById('temple5');
+button_5.onclick = saveLike('temple1');
 
-// local storage 
+function saveLike(button){
+    localStorage.setItem(button,"liked");
+    let my_button = document.getElementById(button);
+    my_button.classList.toggle('i-like-it');
+    if (my_button.classList.toggle('i-like-it') === false){
+        localStorage.removeItem(button);
+    };
+}
 
-// let lastVisit = window.localStorage.getItem("lastDayVisited");
-// localStorage.setItem("lastDayVisited", today.getTime());
