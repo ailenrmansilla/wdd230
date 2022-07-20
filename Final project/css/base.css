@@ -512,4 +512,36 @@ form label input:required:valid{
     top: 61%;
     left: 25%;
 }
-/* YA FUE QUITAR ESOS POSITION ABSOLUTE */
+#temples-main{
+    margin: auto;
+    max-width: 1300px;
+    background-color: #FEFAE0;
+}
+#temples-around-the-world{
+    background-color: #FAEDCD;
+    box-shadow: 0 0 10px #D4A373;
+}
+#temples-around-the-world section{
+    margin: 0.25rem;
+    padding: 0.35rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCD5AE;
+    border: 1px solid #555555;
+}
+#temples-around-the-world section p,h2,h3{
+    color: #333333;
+    text-align: center;
+}
+.temple-like-button{
+    width: 150px;
+    text-align: center;
+    background-color: #FAEDCD;
+    color:#555555;
+}
+.i-like-it{
+    background-color: rgb(157, 91, 102);
+    color:#FEFAE0;
+}

@@ -16,7 +16,7 @@
             "email":"bountiful.temple@lds.org",
             "services":"<li>Clothing rental available<li>Distribution center nearby",
             "id":"temple2",
-            "closureSchedule":"Saturday, 23 July 2022<li>Monday, 19 September 2022 - Monday, 3 October 2022<li>Wednesday, 23 November 2022 - Thursday, 24 November 2022<li>Friday, 23 December 2022 - Saturday, 24 December 2022<li>Saturday, 31 December 2022"
+            "closureSchedule":"<li>Saturday, 23 July 2022<li>Monday, 19 September 2022 - Monday, 3 October 2022<li>Wednesday, 23 November 2022 - Thursday, 24 November 2022<li>Friday, 23 December 2022 - Saturday, 24 December 2022<li>Saturday, 31 December 2022"
         },
         {   "city":"Brigham City Utah Temple",
             "picture" : "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg",
@@ -32,7 +32,7 @@
             "address":"4151 W Lake Ave Glenview IL USA",
             "telephone":"(1) 847-299-6500",
             "email":"chicago.temple@lds.org",
-            "services":"Clothing rental available<li>Distribution center nearby",
+            "services":"<li>Clothing rental available<li>Distribution center nearby",
             "id":"temple4",
             "closureSchedule":"<li>Monday, 29 August 2022 - Monday, 12 September 2022<li>Wednesday, 23 November 2022 (Limited Operations)<li>Saturday, 24 December 2022<li>Saturday, 31 December 2022"
         },
@@ -41,7 +41,7 @@
             "address":"750 S 2nd E Rexburg ID USA",
             "telephone":"(1) 208-656-0880",
             "email":"rexburg.temple@lds.org",
-            "services":"Clothing rental available<li>Distribution center nearby",
+            "services":"<li>Clothing rental available<li>Distribution center nearby",
             "id":"temple5",
             "closureSchedule":"<li>Saturday, 23 July 2022<li>Saturday, 1 October 2022<li>Saturday, 24 December 2022<li>Saturday, 31 December 2022"
         }

@@ -52,7 +52,7 @@ function displayTemples(temple){
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let email = document.createElement('p');
-    let services = document.createElement('p');
+    let services = document.createElement('ul');
     let closure_schedule = document.createElement('ul');
     let like_button = document.createElement('a');
 
@@ -65,7 +65,7 @@ function displayTemples(temple){
     address.textContent = temple.address;
     phone.textContent = temple.telephone;
     email.textContent = temple.email;
-    closure_schedule.textContent = temple.closureSchedule;
+    closure_schedule.innerHTML = temple.closureSchedule;
     services.innerHTML = temple.services;
  
     like_button.textContent = 'Like ♥';
@@ -90,14 +90,14 @@ function displayTemples(temple){
 const button_1 = document.getElementById('temple1');
 button_1.onclick = saveLike('temple1');
 const button_2 = document.getElementById('temple2');
-button_2.onclick = saveLike('temple1');
+button_2.onclick = saveLike('temple2');
 const button_3 = document.getElementById('temple3');
-button_3.onclick = saveLike('temple1');
+button_3.onclick = saveLike('temple3');
 const button_4 = document.getElementById('temple4');
-button_4.onclick = saveLike('temple1');
+button_4.onclick = saveLike('temple4');
 const button_5 = document.getElementById('temple5');
-button_5.onclick = saveLike('temple1');
-
+button_5.onclick = saveLike('temple5');
+ //if they click it to mark like, we save it in local storage, if they dont like it we remove it
 function saveLike(button){
     localStorage.setItem(button,"liked");
     let my_button = document.getElementById(button);
