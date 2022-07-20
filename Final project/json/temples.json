@@ -6,6 +6,7 @@
             "telephone":"(1) 208-322-4422",
             "email":"boise.temple@lds.org",
             "services":"No services available",
+            "id":"temple1",
             "closureSchedule":"<li>Saturday, 1 October 2022<li>Monday, 10 October 2022 - Monday, 24 October 2022<li>Wednesday, 23 November 2022 (Limited Operations)<li>Thursday, 24 November 2022<li>Saturday, 24 December 2022<li>Saturday, 31 December 2022 (Limited Operations)"
         },
         {   "city":"Bountiful Utah Temple",
@@ -14,6 +15,7 @@
             "telephone":"(1) 801-296-2100",
             "email":"bountiful.temple@lds.org",
             "services":"<li>Clothing rental available<li>Distribution center nearby",
+            "id":"temple2",
             "closureSchedule":"Saturday, 23 July 2022<li>Monday, 19 September 2022 - Monday, 3 October 2022<li>Wednesday, 23 November 2022 - Thursday, 24 November 2022<li>Friday, 23 December 2022 - Saturday, 24 December 2022<li>Saturday, 31 December 2022"
         },
         {   "city":"Brigham City Utah Temple",
@@ -22,6 +24,7 @@
             "telephone":"(1) 435-695-2170",
             "email":"brigham.city.temple@lds.org",
             "services":"Distribution center nearby",
+            "id":"temple3",
             "closureSchedule":"<li>Monday, 8 August 2022 - Monday, 22 August 2022<li>Friday, 9 September 2022 (Limited Operations)<li>Saturday, 10 September 2022<li>Wednesday, 23 November 2022 (Limited Operations)<li>Saturday, 24 December 2022<li>Saturday, 31 December 2022 (Limited Operations)"
         },
         {   "city":"Chicago Illinois Temple",
@@ -30,6 +33,7 @@
             "telephone":"(1) 847-299-6500",
             "email":"chicago.temple@lds.org",
             "services":"Clothing rental available<li>Distribution center nearby",
+            "id":"temple4",
             "closureSchedule":"<li>Monday, 29 August 2022 - Monday, 12 September 2022<li>Wednesday, 23 November 2022 (Limited Operations)<li>Saturday, 24 December 2022<li>Saturday, 31 December 2022"
         },
         {   "city":"Rexburg Idaho Temple",
@@ -38,6 +42,7 @@
             "telephone":"(1) 208-656-0880",
             "email":"rexburg.temple@lds.org",
             "services":"Clothing rental available<li>Distribution center nearby",
+            "id":"temple5",
             "closureSchedule":"<li>Saturday, 23 July 2022<li>Saturday, 1 October 2022<li>Saturday, 24 December 2022<li>Saturday, 31 December 2022"
         }
     ]

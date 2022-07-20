@@ -54,7 +54,7 @@ function displayTemples(temple){
     let email = document.createElement('p');
     let services = document.createElement('p');
     let closure_schedule = document.createElement('ul');
-    let like_button = document.createElement('button');
+    let like_button = document.createElement('a');
 
     picture.setAttribute('src', temple.picture);
     let alt_text = `Picture of ${temple.city} temple`;
@@ -66,13 +66,14 @@ function displayTemples(temple){
     phone.textContent = temple.telephone;
     email.textContent = temple.email;
     closure_schedule.textContent = temple.closureSchedule;
-    services.textContent = temple.services;
-    
-    
-    
+    services.innerHTML = temple.services;
+ 
     like_button.textContent = 'Like ♥';
-    like_button.classList.add('like-button');
-    like_button.name = "like";
+    like_button.classList.add('i-like-it');
+    like_button.classList.add('temple-like-button');
+    let id_button = `${city}-like-button`;
+    like_button.setAttribute('id',id_button);
+
 
     card.appendChild(city);
     card.appendChild(picture);
@@ -87,6 +88,7 @@ function displayTemples(temple){
 
 };
 
+const button_1 = document.getElementById('')
 // const like_button = document.querySelector('#like-button');
 // like_button.addEventListener ("click", function() {
 //     // change background of button
