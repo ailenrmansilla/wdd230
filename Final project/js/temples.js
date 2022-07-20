@@ -30,6 +30,7 @@ const today = new Date();
 const current_year = document.getElementById('current-year');
 current_year.textContent = today.getFullYear();
 
+//display temples from json file
 const url = "https://ailenrmansilla.github.io/wdd230/Final%20project/json/temples.json";
 const temples_container = document.getElementById('temples-around-the-world');
 
@@ -46,33 +47,48 @@ fetch(url)
 function displayTemples(temple){
     console.log(temple);
     let card = document.createElement('section');
-    let name = document.createElement('h3');
+    let city = document.createElement('h3');
     let picture = document.createElement('img');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let email = document.createElement('p');
     let services = document.createElement('p');
-    let closure_schedule = document.createElement('p');
+    let closure_schedule = document.createElement('ul');
+    let like_button = document.createElement('button');
 
-    picture.setAttribute('src', temple.icon);
-    let alt_text = `Icon of ${temple.name} - ${temple.membershiplevel} member of the Chamber`;
+    picture.setAttribute('src', temple.picture);
+    let alt_text = `Picture of ${temple.city} temple`;
     picture.setAttribute('alt', alt_text);
     picture.setAttribute('loading','lazy');
 
-    name.textContent = temple.name;
+    city.textContent = temple.city;
     address.textContent = temple.address;
-    phone.textContent = temple.phone;
-    website.textContent = temple.website;
-    membership_level.textContent = `${temple.membershiplevel} member`;
+    phone.textContent = temple.telephone;
+    email.textContent = temple.email;
+    services.textContent = temple.services;
+    closure_schedule.textContent = temple.temple-closure-schedule;
+    
+    
+    like_button.textContent = 'Like ♥';
+    like_button.classList.add('like-button');
+    like_button.name = "like";
 
-    card.appendChild(name);
+    card.appendChild(city);
     card.appendChild(picture);
     card.appendChild(address);
     card.appendChild(phone);
-    card.appendChild(website);
-    card.appendChild(membership_level);
-    
-    templesDirectory.appendChild(card);
-    templesDirectory.classList.add("grid");
+    card.appendChild(email);
+    card.appendChild(services);
+    card.appendChild(closure_schedule);
+    card.appendChild(like_button);
 
-}
+    temples_container.appendChild(card);
+
+};
+
+// const like_button = document.querySelector('#like-button');
+// like_button.addEventListener ("click", function() {
+//     // change background of button
+//     let button_pressed_class = document. getElementsByClassName('liked');
+//     like_button.classList.add('liked');
+//   });
