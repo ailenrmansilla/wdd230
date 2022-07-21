@@ -45,7 +45,6 @@ fetch(url)
 })
 
 function displayTemples(temple){
-    console.log(temple);
     let card = document.createElement('section');
     let city = document.createElement('h3');
     let picture = document.createElement('img');
@@ -88,21 +87,24 @@ function displayTemples(temple){
 };
 // try to move this inside to after creating the button
 document.querySelector('#temple1').addEventListener("click", function(){
-    localStorage.setItem("liked", "temple1");
+    setInStorage("temple1");
 });
 document.querySelector('#temple2').addEventListener("click", function(){
-    localStorage.setItem("liked", "temple2");
+    setInStorage("temple2");
 });
 document.querySelector('#temple3').addEventListener("click", function(){
-    localStorage.setItem("liked", "temple3");
+    setInStorage("temple3");
 });
 document.querySelector('#temple4').addEventListener("click", function(){
-    localStorage.setItem("liked", "temple4");
+    setInStorage("temple4");
 });
 document.querySelector('#temple5').addEventListener("click", function(){
-    localStorage.setItem("liked", "temple5");
+    setInStorage("temple5");
 });
 
-const liked = localStorage.getItem("liked");
+function setInStorage(id){
+    localStorage.setItem("liked", id);
+}
+const liked = localStorage.getItem("liked"); //returns the id of that button
 document.getElementById(liked).style.backgroundColor = "#9d5b66";
 document.getElementById(liked).style.color = "#FEFAE0";
