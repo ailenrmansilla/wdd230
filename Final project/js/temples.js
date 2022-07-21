@@ -72,6 +72,7 @@ function displayTemples(temple){
     like_button.classList.add('temple-like-button');
     like_button.setAttribute('id',temple.id);
     like_button.setAttribute('name','like-button');
+    like_button.setAttribute('type','button');
 
     card.appendChild(city);
     card.appendChild(picture);
@@ -85,37 +86,23 @@ function displayTemples(temple){
     temples_container.appendChild(card);
 
 };
+// try to move this inside to after creating the button
+document.querySelector('#temple1').addEventListener("click", function(){
+    localStorage.setItem("liked", "temple1");
+});
+document.querySelector('#temple2').addEventListener("click", function(){
+    localStorage.setItem("liked", "temple2");
+});
+document.querySelector('#temple3').addEventListener("click", function(){
+    localStorage.setItem("liked", "temple3");
+});
+document.querySelector('#temple4').addEventListener("click", function(){
+    localStorage.setItem("liked", "temple4");
+});
+document.querySelector('#temple5').addEventListener("click", function(){
+    localStorage.setItem("liked", "temple5");
+});
 
-document.getElementById('temple1').addEventListener("click", function(){
-    localStorage.setItem('temple1',"liked");
-    let my_button = document.getElementById('temple1');
-    my_button.classList.add('i-like-it');
-});
-document.getElementById('temple2').addEventListener("click", function(){
-    localStorage.setItem('temple2',"liked");
-    let my_button = document.getElementById('temple2');
-    my_button.classList.add('i-like-it');
-});
-document.getElementById('temple3').addEventListener("click", function(){
-    localStorage.setItem('temple3',"liked");
-    let my_button = document.getElementById('temple3');
-    my_button.classList.add('i-like-it');
-});
-document.getElementById('temple4').addEventListener("click", function(){
-    localStorage.setItem('temple4',"liked");
-    let my_button = document.getElementById('temple4');
-    my_button.classList.add('i-like-it');
-});
-document.getElementById('temple5').addEventListener("click", function(){
-    localStorage.setItem('temple5',"liked");
-    let my_button = document.getElementById('temple5');
-    my_button.classList.add('i-like-it');
-});
- //if they click it to mark like, we save it in local storage
-
-// function saveLike(button){
-//     localStorage.setItem(button,"liked");
-//     let my_button = document.getElementById(button);
-//     my_button.classList.add('i-like-it');
-// }
-
+const liked = localStorage.getItem("liked");
+document.getElementById(liked).style.backgroundColor = "#9d5b66";
+document.getElementById(liked).style.color = "#FEFAE0";
