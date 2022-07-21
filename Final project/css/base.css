@@ -564,6 +564,10 @@ form label input:required:valid{
     background-color: #FAEDCD;
     color:#555555;
 }
+.temple-like-button:hover{
+    background-color: #D4A373;
+    color:#FEFAE0;
+}
 .i-like-it{
     background-color: #9d5b66;
     color:#FEFAE0;

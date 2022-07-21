@@ -54,7 +54,7 @@ function displayTemples(temple){
     let email = document.createElement('p');
     let services = document.createElement('ul');
     let closure_schedule = document.createElement('ul');
-    let like_button = document.createElement('a');
+    let like_button = document.createElement('button');
 
     picture.setAttribute('src', temple.picture);
     let alt_text = `Picture of ${temple.city} temple`;
@@ -68,12 +68,10 @@ function displayTemples(temple){
     closure_schedule.innerHTML = temple.closureSchedule;
     services.innerHTML = temple.services;
  
-    like_button.textContent = 'Like ♥';
+    like_button.innerHTML = 'Like ♥';
     like_button.classList.add('temple-like-button');
-    let id_button = temple.id;
-    like_button.setAttribute('id',id_button);
-    // other option like_button.setAttribute('onclick',saveLike(temple.id))
-
+    like_button.setAttribute('id',temple.id);
+    like_button.setAttribute('name','like-button');
 
     card.appendChild(city);
     card.appendChild(picture);
@@ -88,28 +86,36 @@ function displayTemples(temple){
 
 };
 
-const button_1 = document.getElementById('temple1');
-button_1.onclick = saveLike('temple1');
-const button_2 = document.getElementById('temple2');
-button_2.onclick = saveLike('temple2');
-const button_3 = document.getElementById('temple3');
-button_3.onclick = saveLike('temple3');
-const button_4 = document.getElementById('temple4');
-button_4.onclick = saveLike('temple4');
-const button_5 = document.getElementById('temple5');
-button_5.onclick = saveLike('temple5');
- //if they click it to mark like, we save it in local storage, if they dont like it we remove it
-function saveLike(button){
-    localStorage.setItem(button,"liked");
-    let my_button = document.getElementById(button);
+document.getElementById('temple1').addEventListener("click", function(){
+    localStorage.setItem('temple1',"liked");
+    let my_button = document.getElementById('temple1');
+    my_button.classList.add('i-like-it');
+});
+document.getElementById('temple2').addEventListener("click", function(){
+    localStorage.setItem('temple2',"liked");
+    let my_button = document.getElementById('temple2');
+    my_button.classList.add('i-like-it');
+});
+document.getElementById('temple3').addEventListener("click", function(){
+    localStorage.setItem('temple3',"liked");
+    let my_button = document.getElementById('temple3');
+    my_button.classList.add('i-like-it');
+});
+document.getElementById('temple4').addEventListener("click", function(){
+    localStorage.setItem('temple4',"liked");
+    let my_button = document.getElementById('temple4');
+    my_button.classList.add('i-like-it');
+});
+document.getElementById('temple5').addEventListener("click", function(){
+    localStorage.setItem('temple5',"liked");
+    let my_button = document.getElementById('temple5');
+    my_button.classList.add('i-like-it');
+});
+ //if they click it to mark like, we save it in local storage
 
-// I wanted to chenge its style here so it looks liked but it is not working
-// also it only stores the like for the first temple
-    
-
-    // my_button.classList.toggle('i-like-it');
-    // if (my_button.classList.toggle('i-like-it') === false){
-    //     localStorage.removeItem(button);
-    // };
-}
+// function saveLike(button){
+//     localStorage.setItem(button,"liked");
+//     let my_button = document.getElementById(button);
+//     my_button.classList.add('i-like-it');
+// }
 
