@@ -72,6 +72,7 @@ function displayTemples(temple){
     like_button.classList.add('temple-like-button');
     let id_button = temple.id;
     like_button.setAttribute('id',id_button);
+    // other option like_button.setAttribute('onclick',saveLike(temple.id))
 
 
     card.appendChild(city);
@@ -101,9 +102,9 @@ button_5.onclick = saveLike('temple5');
 function saveLike(button){
     localStorage.setItem(button,"liked");
     let my_button = document.getElementById(button);
-    my_button.classList.toggle('i-like-it');
-    if (my_button.classList.toggle('i-like-it') === false){
-        localStorage.removeItem(button);
-    };
+    // my_button.classList.toggle('i-like-it');
+    // if (my_button.classList.toggle('i-like-it') === false){
+    //     localStorage.removeItem(button);
+    // };
 }
 

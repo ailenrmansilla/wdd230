@@ -211,4 +211,7 @@
         top: 152%;
         left: 43%;
     }
+    #three-days-forecast{
+        grid-column: 1/4;
+    }
 }

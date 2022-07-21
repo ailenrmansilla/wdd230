@@ -183,21 +183,41 @@ footer div{
     background-color: #D4A373;
 }
 #weather{
-    height: 250px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    border: 1px solid #333333;
+    height: 350px;
+    border: 1px solid #D4A373;
 }
 #weather p{
     font-size: 13px;
 }
 #current-weather{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#city-name{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+#weather-icon{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+#temperature-p{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+#humidity-p{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+#weather-alert{
+    display: none;
 }
 #three-days-forecast{
     display: flex;
     flex-flow: row;
     border: 1px solid #333333;
+    background-color: #FEFAE0;
+    justify-content: center;
 }
 #call-to-action{
     position: relative;
@@ -520,6 +540,9 @@ form label input:required:valid{
 #temples-around-the-world{
     background-color: #FAEDCD;
     box-shadow: 0 0 10px #D4A373;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	align-items: center;
 }
 #temples-around-the-world section{
     margin: 0.25rem;
@@ -542,6 +565,6 @@ form label input:required:valid{
     color:#555555;
 }
 .i-like-it{
-    background-color: rgb(157, 91, 102);
+    background-color: #9d5b66;
     color:#FEFAE0;
 }

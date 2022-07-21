@@ -111,5 +111,17 @@ async function apiWeatherFetch() {
     day_3.appendChild(temperate_3);
     day_3.appendChild(icon_3);
 
+    if (weatherData.alerts !== undefined){
+        let alert_description = document.createElement('p');
+        alert_description = weatherData.alerts.description;
+        document.getElementById('weather-alert').appendChild(alert_description);
+        document.getElementById('weather-alert').style.display = "block";
+    }
+
   }
   apiWeatherFetch();
+
+  //if there is an alert and they want to close it
+  document.getElementById("x").addEventListener("click", function() {
+    document.getElementById('weather-alert').style.display = "none";
+  });
