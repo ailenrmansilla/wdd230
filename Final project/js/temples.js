@@ -102,6 +102,11 @@ button_5.onclick = saveLike('temple5');
 function saveLike(button){
     localStorage.setItem(button,"liked");
     let my_button = document.getElementById(button);
+
+// I wanted to chenge its style here so it looks liked but it is not working
+// also it only stores the like for the first temple
+    
+
     // my_button.classList.toggle('i-like-it');
     // if (my_button.classList.toggle('i-like-it') === false){
     //     localStorage.removeItem(button);
