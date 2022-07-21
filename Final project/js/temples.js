@@ -60,12 +60,12 @@ function displayTemples(temple){
     picture.setAttribute('alt', alt_text);
     picture.setAttribute('loading','lazy');
 
-    city.textContent = temple.city;
-    address.textContent = temple.address;
-    phone.textContent = temple.telephone;
-    email.textContent = temple.email;
-    closure_schedule.innerHTML = temple.closureSchedule;
-    services.innerHTML = temple.services;
+    city.textContent = `${temple.city}`;
+    address.innerHTML = `Temple adress:<br>${temple.address}`;
+    phone.innerHTML = `Telephone:<br>${temple.telephone}`;
+    email.innerHTML = `Email:<br>${temple.email}`;
+    closure_schedule.innerHTML = `<p>Closure Schedule:<br></p>${temple.closureSchedule}`;
+    services.innerHTML = `<p>Services:<br></p>${temple.services}`;
  
     like_button.innerHTML = 'Like ♥';
     like_button.classList.add('temple-like-button');
