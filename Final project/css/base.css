@@ -185,9 +185,11 @@ footer div{
 #weather{
     height: 350px;
     border: 1px solid #D4A373;
+    background-color: #FEFAE0;
 }
 #weather p{
     font-size: 13px;
+    color: #555555;
 }
 #current-weather{
     display: grid;
@@ -211,6 +213,7 @@ footer div{
 }
 #weather-alert{
     display: none;
+    background-color: #CCD5AE;
 }
 #three-days-forecast{
     display: flex;
@@ -218,6 +221,11 @@ footer div{
     border: 1px solid #333333;
     background-color: #FEFAE0;
     justify-content: center;
+}
+#three-days-forecast div{
+    text-align: center;
+    background-color: #FAEDCD;
+    border: 2px solid #D4A373;
 }
 #call-to-action{
     position: relative;
@@ -241,10 +249,12 @@ footer div{
 #temple-info{
     position:relative;
     display: flex;
+    flex-flow: column;
     justify-content: center;
 }
 #temple-info p{
     text-align: center;
+    font-size: 15px;
 }
 #temple-info img{
     max-width: 300px;
